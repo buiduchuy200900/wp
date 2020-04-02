@@ -1,1 +1,8 @@
 /* Insert your styles here */
+nav a {
+  width: 300px;
+  display: block;
+  padding: 50px 30px;
+  font-family: Arial;
+  text-align: center;
+}
