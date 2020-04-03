@@ -1,8 +1,15 @@
 /* Insert your styles here */
+nav {
+  background-color: black;
+}
+
 nav a {
   width: 300px;
   display: block;
-  padding: 50px 30px;
-  font-family: Arial;
   text-align: center;
+  color: red;
+}
+
+nav a:hover {
+  color: white;
 }
