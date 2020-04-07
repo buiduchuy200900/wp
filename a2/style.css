@@ -20,3 +20,11 @@ nav a:hover {
 .carousel-caption {
   background-color: red;
 }
+
+table,td,th{
+  height:50px;
+  border: 2px solid;
+  border-collapse: collapse;
+  text-align: center;
+
+}
