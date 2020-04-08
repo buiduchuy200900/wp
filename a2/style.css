@@ -5,18 +5,21 @@ header {
   top: 0;
 }
 
+nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
 
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+nav li {
+  display: inline-block;
+  width: 33%;
+  padding: 7px;
+  text-align: center;
 }
 
 nav a {
-  background-color: black;
-  width: 450px;
-  height: 50px;
   text-align: center;
   color: red;
 }
@@ -27,10 +30,25 @@ nav a:hover {
 
 #About_Us {
   background-color: black;
+  color: white;
 }
 
-.carousel-caption {
-  background-color: red;
+.parallax {
+  background-image: url("media/cinema.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table,td,th{
