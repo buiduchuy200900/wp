@@ -82,6 +82,18 @@ table,td,th{
   color: red;
 }
 
+#Synopsis_Area {
+  background-image: url(media/Captain.jpg), url(media/IronMan.jpg);
+  background-position: right, left ;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  height: 700px;
+}
+
+#Synopsis_Area h1 {
+  color: white;
+}
+
 footer{
   background-color: black;
   color: red;
