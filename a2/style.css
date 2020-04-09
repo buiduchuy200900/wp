@@ -8,7 +8,7 @@ header {
 
 nav a {
   display: block;
-  width: 470px;
+  width: 430px;
   background-color: black;
   text-align: center;
   color: red;
@@ -21,6 +21,12 @@ nav a:hover {
 #About_Us {
   background-color: black;
   color: white;
+  text-align: center;
+}
+
+#About_Us h1 {
+  background-color: purple;
+  color: yellow;
 }
 
 .parallax {
@@ -46,7 +52,7 @@ h1 {
   height: 500px;
 }
 
-#Prices h4 {
+#Prices h1 {
   text-align:center;
   background-color: orange;
 }
@@ -63,4 +69,20 @@ table,td,th{
   border-collapse: collapse;
   text-align: center;
 
+}
+
+#Now_Showing{
+  height: 830px;
+  background-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+}
+
+#Now_Showing h1 {
+  text-align: center;
+  background-color: black;
+  color: red;
+}
+
+footer{
+  background-color: black;
+  color: red;
 }
