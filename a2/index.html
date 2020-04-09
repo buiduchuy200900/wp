@@ -28,11 +28,26 @@
   <!--Navigation Bar-->
   <header>
     <a href="index.html"><img src="media/logo.png" class="center"></a>
-    <nav>
-      <ul>
-        <li><a href="#About_Us" class="active">About Us</a></li>
-        <li><a href="#Prices">Price</a></li>
-        <li><a href="#Now_Showing">Now Showing</a></li>
+    <nav class="navbar navbar-expand-sm">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#About_Us" class="active">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Prices">Price</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button type="button" style="color:red" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+              Now Showing
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#Now_Showing">Now Showing</a>
+              <a class="dropdown-item" href="#Synopsis_Area">Synopsis Area</a>
+              <a class="dropdown-item" href="#Booking_Area">Booking Area</a>
+            </div>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
@@ -62,8 +77,8 @@
       </div>
     </section>
     <!--Prices section-->
-    <section>
-      <h4 style="text-align:center;margin:40px;">Prices</h4>
+    <section id="Prices">
+      <h4>Prices</h4>
       <div class="container mt-5 mr-2">
         <table>
           <tr>
@@ -114,93 +129,94 @@
       <!--Now showing section-->
     </section>
     <!--Endgame panel-->
-    <h4 style="text-align:center;margin:40px;">Now Showing</h4>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col" >
-          <div class="card" style="border:solid blue ">
-            <div class="row">
-              <div class="col-md-5 ">
-                <img src="media/endgame.jpg" alt="endgame" width="223" height="302">
+    <section id="Now_Showing">
+      <h4 style="text-align:center;margin:40px;">Now Showing</h4>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col" >
+            <div class="card" style="border:solid blue ">
+              <div class="row">
+                <div class="col-md-5 ">
+                  <img src="media/endgame.jpg" alt="endgame" width="223" height="302">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title"> End game &nbsp&nbsp&nbsp&nbsp PG-13</h5>
+                    <p class="card-text" style="margin-top: 50px">Wednesday-9pm</p>
+                    <p class="card-text">Friday-9pm</p>
+                    <p class="card-text">Saturday-6pm</p>
+                    <p class="card-text">Sunday-6pm</p>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title"> End game &nbsp&nbsp&nbsp&nbsp PG-13</h5>
-                  <p class="card-text" style="margin-top: 50px">Wednesday-9pm</p>
-                  <p class="card-text">Friday-9pm</p>
-                  <p class="card-text">Saturday-6pm</p>
-                  <p class="card-text">Sunday-6pm</p>
+            </div>
+            <!--Endtopwedding panel -->
+          </div>
+          <div class="col" >
+            <div class="card" style="border:solid blue ">
+              <div class="row">
+                <div class="col-md-5 ">
+                  <img src="media/topendwedding.jpg" alt="endgame" width="223" height="302">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title"> Top End Wedding &nbsp&nbsp&nbsp&nbsp NR</h5>
+                    <p class="card-text" style="margin-top: 50px">Monday-6pm</p>
+                    <p class="card-text">Tuesday-6pm</p>
+                    <p class="card-text">Saturday-3pm</p>
+                    <p class="card-text">Sunday-3pm</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!--Endtopwedding panel -->
         </div>
-        <div class="col" >
-          <div class="card" style="border:solid blue ">
-            <div class="row">
-              <div class="col-md-5 ">
-                <img src="media/topendwedding.jpg" alt="endgame" width="223" height="302">
+        <!--Dumbo panel-->
+        <div class="row mt-5">
+          <div class="col" >
+            <div class="card" style="border:solid blue ">
+              <div class="row">
+                <div class="col-md-5 ">
+                  <img src="media/dumbo.jpg" alt="endgame" width="223" height="302">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title"> Dumbo &nbsp&nbsp&nbsp&nbsp PG</h5>
+                    <p class="card-text">Monday-12pm</p>
+                    <p class="card-text">Tuesday-12pm</p>
+                    <p class="card-text">Wednesday-6pm</p>
+                    <p class="card-text">Friday-6pm</p>
+                    <p class="card-text">Saturday-12pm</p>
+                    <p class="card-text">Sunday-12pm</p>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title"> Top End Wedding &nbsp&nbsp&nbsp&nbsp NR</h5>
-                  <p class="card-text" style="margin-top: 50px">Monday-6pm</p>
-                  <p class="card-text">Tuesday-6pm</p>
-                  <p class="card-text">Saturday-3pm</p>
-                  <p class="card-text">Sunday-3pm</p>
+            </div>
+            <!--Thehappyprince panel-->
+          </div>
+          <div class="col" >
+            <div class="card" style="border:solid blue ">
+              <div class="row">
+                <div class="col-md-5 ">
+                  <img src="media/thehappyprince.jpg" alt="endgame" width="223" height="302">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title"> The Happy Price &nbsp&nbsp&nbsp&nbsp R</h5>
+                    <p class="card-text" style="margin-top: 50px">Wednesday-12pm</p>
+                    <p class="card-text">Friday-12pm</p>
+                    <p class="card-text">Saturday-9pm</p>
+                    <p class="card-text">Sunday-9pm</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!--Dumbo panel-->
-      <div class="row mt-5">
-        <div class="col" >
-          <div class="card" style="border:solid blue ">
-            <div class="row">
-              <div class="col-md-5 ">
-                <img src="media/dumbo.jpg" alt="endgame" width="223" height="302">
-              </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title"> Dumbo &nbsp&nbsp&nbsp&nbsp PG</h5>
-                  <p class="card-text">Monday-12pm</p>
-                  <p class="card-text">Tuesday-12pm</p>
-                  <p class="card-text">Wednesday-6pm</p>
-                  <p class="card-text">Friday-6pm</p>
-                  <p class="card-text">Saturday-12pm</p>
-                  <p class="card-text">Sunday-12pm</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Thehappyprince panel-->
-        </div>
-        <div class="col" >
-          <div class="card" style="border:solid blue ">
-            <div class="row">
-              <div class="col-md-5 ">
-                <img src="media/thehappyprince.jpg" alt="endgame" width="223" height="302">
-              </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title"> The Happy Price &nbsp&nbsp&nbsp&nbsp R</h5>
-                  <p class="card-text" style="margin-top: 50px">Wednesday-12pm</p>
-                  <p class="card-text">Friday-12pm</p>
-                  <p class="card-text">Saturday-9pm</p>
-                  <p class="card-text">Sunday-9pm</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
     <!--Synosis Area section-->
-    <section>
+    <section id="Synopsis_Area">
       <h4 style="text-align: center; margin: 40px;">Synosis Area</h4>
       <div class="container mt-5">
         <div class="row">
@@ -260,7 +276,7 @@
         </div>
     </section>
     <!--Booking Form section-->
-    <section>
+    <section id="Booking_Area">
       <div class="container mt-5">
         <h4 style="text-align: center;">Booking form</h2>
           <form action="/action_page.php">
@@ -281,9 +297,6 @@
           </form>
       </div>
     </section>
-
-
-
   </main>
 
   <footer>

@@ -3,23 +3,13 @@ header {
   background-color: black;
   position: sticky;
   top: 0;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-}
-
-nav li {
-  display: inline-block;
-  width: 33%;
-  padding: 7px;
-  text-align: center;
+  z-index: 9999;
 }
 
 nav a {
+  display: block;
+  width: 470px;
+  background-color: black;
   text-align: center;
   color: red;
 }
@@ -51,9 +41,25 @@ h1 {
   margin-right: auto;
 }
 
+#Prices {
+  background-image: url('media/prices.jpg');
+  height: 500px;
+}
+
+#Prices h4 {
+  text-align:center;
+  background-color: orange;
+}
+
+#Prices table{
+  background-color: black;
+  color: white;
+  border: 15px solid orange;
+}
+
 table,td,th{
   height:50px;
-  border: 2px solid;
+  border: 2px solid orange;
   border-collapse: collapse;
   text-align: center;
 
