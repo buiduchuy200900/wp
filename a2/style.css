@@ -21,7 +21,7 @@ nav a:hover {
 #About_Us {
   background-color: black;
   color: white;
-  text-align: center;
+  font-size: larger;
 }
 
 #About_Us h1 {
@@ -31,14 +31,14 @@ nav a:hover {
 
 .parallax {
   background-image: url("media/cinema.jpg");
-  min-height: 500px;
+  min-height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-h1 {
+h1,h3 {
   text-align: center;
 }
 .center {
@@ -92,6 +92,12 @@ table,td,th{
 
 #Synopsis_Area h1 {
   color: white;
+}
+
+#Booking_Area {
+  color: white;
+  background-image: linear-gradient(180deg, red, black);
+  height: 350px;
 }
 
 footer{
