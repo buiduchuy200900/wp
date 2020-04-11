@@ -6,12 +6,9 @@ header {
   z-index: 9999;
 }
 
-nav a {
-  display: block;
-  width: 430px;
-  background-color: black;
-  text-align: center;
-  color: red;
+.nav-item
+{
+  margin-left: 280px;
 }
 
 nav a:hover {
@@ -25,7 +22,7 @@ nav a:hover {
 }
 
 #About_Us h1 {
-  background-color: purple;
+  background-color: crimson;
   color: yellow;
 }
 
