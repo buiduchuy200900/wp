@@ -28,33 +28,33 @@
   <!--Navigation Bar-->
   <header>
     <a href="index.html"><img src="media/logo.png" class="center"></a>
-    <nav class="navbar navbar-expand-sm">
-      <ul class="navbar-nav">
-        <li class="nav-item">          
-          <button type="button" class="btn btn-dark" >
-            <a href="#About_Us" style="color:red">About Us</a>
-          </button>
-        </li>
-        <li class="nav-item">
-          <button type="button" class="btn btn-dark">
-            <a href="#Prices" style="color:red">Price</a>
-          </button>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-            <button type="button" style="color:red" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
-              Now Showing
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#Now_Showing">Now Showing</a>
-              <a class="dropdown-item" href="#Synopsis_Area">Synopsis Area</a>
-              <a class="dropdown-item" href="#Booking_Area">Booking Area</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </nav>
   </header>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <ul class="navbar-nav">
+      <li class="nav-item">          
+        <button type="button" class="btn btn-dark" >
+          <a href="#About_Us" style="color:red">About Us</a>
+        </button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-dark">
+          <a href="#Prices" style="color:red">Price</a>
+        </button>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <button type="button" style="color:red" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+            Now Showing
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#Now_Showing">Now Showing</a>
+            <a class="dropdown-item" href="#Synopsis_Area">Synopsis Area</a>
+            <a class="dropdown-item" href="#Booking_Area">Booking Area</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
 
   <main>
 
@@ -351,7 +351,7 @@
       <p>GROUP 6</p>
       <p>Bui Duc Huy - s3817842</p>
       <p>Nguyen Quoc Huy- s3818764</p>
-      <p>Last date modified: 13/4/2020</p>
+      <p>Last date modified: 14/4/2020</p>
       <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
     <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
       Programming course at RMIT University in Melbourne, Australia.</div>

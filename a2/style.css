@@ -1,9 +1,16 @@
 /* Insert your styles here */
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: black;
+}
+
+nav {
   position: sticky;
-  top: 0;
   z-index: 9999;
+  background-color: black;
 }
 
 .nav-item
@@ -28,7 +35,7 @@ nav a:hover {
 
 .parallax {
   background-image: url("media/cinema.jpg");
-  min-height: 600px;
+  min-height: 550px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
