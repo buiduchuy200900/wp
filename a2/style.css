@@ -23,7 +23,7 @@ nav a:hover {
 }
 
 #About_Us {
-  background-color: black;
+  background-image: linear-gradient(to right, orange,black,white);
   color: white;
   font-size: larger;
 }
