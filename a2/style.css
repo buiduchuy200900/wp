@@ -18,9 +18,10 @@ nav {
   margin-left: 280px;
 }
 
-nav a:hover {
-  color: white;
+nav a {
+  color: red;
 }
+
 
 #About_Us {
   background-image: linear-gradient(to right, orange,black,white);
