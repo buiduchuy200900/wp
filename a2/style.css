@@ -18,10 +18,9 @@ nav {
   margin-left: 280px;
 }
 
-nav a {
-  color: red;
+nav a:hover {
+  color: white;
 }
-
 
 #About_Us {
   background-image: linear-gradient(to right, orange,black,white);
@@ -87,22 +86,50 @@ table,td,th{
   color: red;
 }
 
-#Synopsis_Area {
+
+#EG_Synopsis {
+  display: none;
   background-image: url(media/Captain.jpg), url(media/IronMan.jpg);
   background-position: right, left ;
   background-repeat: no-repeat, no-repeat;
   background-size: auto, auto;
   height: 700px;
 }
-
-#Synopsis_Area h1 {
+#EG_Synopsis h1 {
   color: white;
 }
+#TEW_Synopsis {
+  display: none;
+  background-image: url(media/topendwedding.jpg);
+  height: 700px;  
+}
+#TEW_Synopsis h1 {
+  color: white;
+}
+#DUMBO_Synopsis {
+  display: none;
+  background-image: url(media/dumbo.jpg);
+  height: 750px;  
+}
+#DUMBO_Synopsis h1 {
+  color: white;
+}
+#THP_Synopsis {
+  display: none;  
+  background-image: url(media/thehappyprince.jpg);
+  
+  height: 750px;
+}
+#THP_Synopsis h1 {
+  color:black;
+}  
 
 #Booking_Area {
-  color: white;
-  background-image: linear-gradient(180deg, red, black);
-  height: 350px;
+  /*color: white;*/
+  /*background-image: linear-gradient(180deg, red, black);*/
+  
+  display:none
+  
 }
 
 footer{
