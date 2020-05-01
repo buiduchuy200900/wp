@@ -76,7 +76,7 @@ table,td,th{
 }
 
 #Now_Showing{
-  height: 830px;
+  height: 950px;
   background-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
 }
 
@@ -87,7 +87,7 @@ table,td,th{
 }
 
 
-#EG_Synopsis {
+#EG_SynopsisACT {
   display: none;
   background-image: url(media/Captain.jpg), url(media/IronMan.jpg);
   background-position: right, left ;
@@ -95,32 +95,32 @@ table,td,th{
   background-size: auto, auto;
   height: 700px;
 }
-#EG_Synopsis h1 {
+#EG_SynopsisACT h1 {
   color: white;
 }
-#TEW_Synopsis {
+#TEW_SynopsisRMC {
   display: none;
   background-image: url(media/topendwedding.jpg);
   height: 700px;  
 }
-#TEW_Synopsis h1 {
+#TEW_SynopsisRMC h1 {
   color: white;
 }
-#DUMBO_Synopsis {
+#DUMBO_SynopsisANM {
   display: none;
   background-image: url(media/dumbo.jpg);
   height: 750px;  
 }
-#DUMBO_Synopsis h1 {
+#DUMBO_SynopsisANM h1 {
   color: white;
 }
-#THP_Synopsis {
+#THP_SynopsisAHF {
   display: none;  
   background-image: url(media/thehappyprince.jpg);
   
   height: 750px;
 }
-#THP_Synopsis h1 {
+#THP_SynopsisAHF h1 {
   color:black;
 }  
 
@@ -136,3 +136,6 @@ footer{
   background-color: black;
   color: red;
 }
+
+
+
