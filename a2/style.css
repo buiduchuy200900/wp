@@ -23,7 +23,7 @@ nav a:hover {
 }
 
 #About_Us {
-  background-image: linear-gradient(to right, orange,black,white);
+  background-color: black;
   color: white;
   font-size: larger;
 }
@@ -100,7 +100,7 @@ table,td,th{
 }
 #TEW_SynopsisRMC {
   display: none;
-  background-image: url(media/topendwedding.jpg);
+  background-image: url(media/topendwedding1.jpg);
   height: 700px;  
 }
 #TEW_SynopsisRMC h1 {
@@ -108,7 +108,7 @@ table,td,th{
 }
 #DUMBO_SynopsisANM {
   display: none;
-  background-image: url(media/dumbo.jpg);
+  background-image: url(media/Dumbo-background.jpg);
   height: 750px;  
 }
 #DUMBO_SynopsisANM h1 {
@@ -116,7 +116,7 @@ table,td,th{
 }
 #THP_SynopsisAHF {
   display: none;  
-  background-image: url(media/thehappyprince.jpg);
+  background-image: url(media/TheHappyPrince-FILM-panel.jpg);
   
   height: 750px;
 }
@@ -125,9 +125,7 @@ table,td,th{
 }  
 
 #Booking_Area {
-  /*color: white;*/
-  /*background-image: linear-gradient(180deg, red, black);*/
-  
+  background-image: linear-gradient(to bottom, red, black);
   display:none
   
 }

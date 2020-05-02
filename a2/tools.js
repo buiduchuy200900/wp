@@ -25,9 +25,9 @@ function Exit(Which_synopsis) {
  }
  
  function pickdaytime(Which_Day_Time){
- 
       document.getElementById("daytime").innerHTML = Which_Day_Time
  }
+ 
  function setmin(){
      var currentdate= new Date();
      var month = (currentdate.getMonth() +1);
