@@ -117,7 +117,6 @@ table,td,th{
 #THP_SynopsisAHF {
   display: none;  
   background-image: url(media/TheHappyPrince-FILM-panel.jpg);
-  
   height: 750px;
 }
 #THP_SynopsisAHF h1 {
@@ -125,7 +124,7 @@ table,td,th{
 }  
 
 #Booking_Area {
-  background-image: linear-gradient(to bottom, red, black);
+  background-image: linear-gradient(to bottom, red, black );
   display:none
   
 }
