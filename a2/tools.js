@@ -1,5 +1,8 @@
 
-
+ function change_nav_synopsis(Which_nav_synopsis){
+    document.getElementById("nav_synopsis").href  = Which_nav_synopsis   
+ }
+ 
  function showsynopsis(Which_synopsis){ 
     var synopsis=document.getElementById(Which_synopsis) 
     var endgame = document.getElementById("EG_SynopsisACT")
@@ -27,9 +30,7 @@
         THP.style.display = "none"
         synopsis.style.display = "block"
         location.href = "#" + Which_synopsis
-    }
-
-   
+    }   
  }
  
  function showbookingform(){

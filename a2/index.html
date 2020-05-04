@@ -44,7 +44,7 @@
         </a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#Now_Showing">Now Showing</a>
-          <a class="dropdown-item" href="#Synopsis_Area">Synopsis Area</a>
+          <a class="dropdown-item" id="nav_synopsis" href="#EG_SynopsisACT">Synopsis Area</a>
           <a class="dropdown-item" href="#Booking_Area">Booking Area</a>
         </div>
       </li>
@@ -171,7 +171,7 @@
         <h1>NOW SHOWING</h1>
         <div class="container mt-5">
           <div class="row">
-            <div class="col" onclick="showsynopsis('EG_SynopsisACT')" >
+            <div class="col" onclick="showsynopsis('EG_SynopsisACT');change_nav_synopsis('#EG_SynopsisACT')" >
               <div class="card" style="border:solid 7px red  ">
                 <div class="row">
                   <div class="col-md-5 ">
@@ -191,7 +191,7 @@
               </div>
               <!--Endtopwedding panel -->
             </div>
-            <div class="col" onclick="showsynopsis('TEW_SynopsisRMC')" ; >
+            <div class="col" onclick="showsynopsis('TEW_SynopsisRMC');change_nav_synopsis('#TEW_SynopsisRMC')" >
               <div class="card" style="border:solid 7px black ">
                 <div class="row">
                   <div class="col-md-5 ">
@@ -212,7 +212,7 @@
           </div>
           <!--Dumbo panel-->
           <div class="row mt-5">
-            <div class="col" onclick="showsynopsis('DUMBO_SynopsisANM')";>
+            <div class="col" onclick="showsynopsis('DUMBO_SynopsisANM');change_nav_synopsis('#DUMBO_SynopsisANM')">
               <div class="card" style="border:solid 7px blue ">
                 <div class="row">
                   <div class="col-md-5 ">
@@ -234,7 +234,7 @@
               </div>
               <!--Thehappyprince panel-->
             </div>
-            <div class="col" onclick="showsynopsis('THP_SynopsisAHF')" ;>
+            <div class="col" onclick="showsynopsis('THP_SynopsisAHF');change_nav_synopsis('#THP_SynopsisAHF')" ;>
               <div class="card" style="border:solid 7px orange ">
                 <div class="row">
                   <div class="col-md-5 ">
