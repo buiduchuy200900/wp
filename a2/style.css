@@ -88,7 +88,7 @@ table,td,th{
 
 
 #EG_SynopsisACT {
-  display: none;
+  display: block ;
   background-image: url(media/Captain.jpg), url(media/IronMan.jpg);
   background-position: right, left ;
   background-repeat: no-repeat, no-repeat;
@@ -125,7 +125,7 @@ table,td,th{
 
 #Booking_Area {
   background-image: linear-gradient(to bottom, red, black );
-  display:none
+  display: block
   
 }
 

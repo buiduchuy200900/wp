@@ -171,7 +171,7 @@
         <h1>NOW SHOWING</h1>
         <div class="container mt-5">
           <div class="row">
-            <div class="col" onclick="showsynopsis('EG_SynopsisACT');pickmovie('END GAME'); movie_ID('ACT')" >
+            <div class="col" onclick="showsynopsis('EG_SynopsisACT')" >
               <div class="card" style="border:solid 7px red  ">
                 <div class="row">
                   <div class="col-md-5 ">
@@ -191,7 +191,7 @@
               </div>
               <!--Endtopwedding panel -->
             </div>
-            <div class="col" onclick="showsynopsis('TEW_SynopsisRMC');pickmovie('TOP END WEDDING')" ; >
+            <div class="col" onclick="showsynopsis('TEW_SynopsisRMC')" ; >
               <div class="card" style="border:solid 7px black ">
                 <div class="row">
                   <div class="col-md-5 ">
@@ -212,7 +212,7 @@
           </div>
           <!--Dumbo panel-->
           <div class="row mt-5">
-            <div class="col" onclick="showsynopsis('DUMBO_SynopsisANM');pickmovie('DUMBO')" ;>
+            <div class="col" onclick="showsynopsis('DUMBO_SynopsisANM')";>
               <div class="card" style="border:solid 7px blue ">
                 <div class="row">
                   <div class="col-md-5 ">
@@ -234,7 +234,7 @@
               </div>
               <!--Thehappyprince panel-->
             </div>
-            <div class="col" onclick="showsynopsis('THP_SynopsisAHF');pickmovie('THE HAPPY PRICE')" ;>
+            <div class="col" onclick="showsynopsis('THP_SynopsisAHF')" ;>
               <div class="card" style="border:solid 7px orange ">
                 <div class="row">
                   <div class="col-md-5 ">
@@ -259,8 +259,7 @@
     </article>
     <!--END GAME SYNOPSIS section-->
     <section id="EG_SynopsisACT">
-      <h1 style="padding-left:10%">SYNOPSIS AREA <button type="button" class="btn btn-danger"
-          style="float:right;padding:1% 3%;" onclick="Exit('EG_SynopsisACT')">Exit</button></h1>
+      <h1 >SYNOPSIS AREA</h1>
       <div class="container mt-5 mb-5">
         <div class="row">
           <div class=col>
@@ -332,8 +331,7 @@
 
     <!--TOP END WEDDING SYNOPSIS-->
     <section id="TEW_SynopsisRMC">
-      <h1 style="padding-left:10%; color: red">SYNOPSIS AREA <button type="button" class="btn btn-danger"
-          style="float:right;padding:1% 3%;" onclick="Exit('TEW_SynopsisRMC')">Exit</button></h1>
+      <h1 style="color: red">SYNOPSIS AREA </h1>
       <div class="container mt-5 mb-5">
         <div class="row">
           <div class=col>
@@ -408,8 +406,7 @@
     </section>
     <!--DUMBO SYNOPSIS-->
     <section id="DUMBO_SynopsisANM">
-      <h1 style="padding-left:10%; color: black;">SYNOPSIS AREA <button type="button" class="btn btn-danger"
-          style="float:right;padding:1% 3%;" onclick="Exit('DUMBO_SynopsisANM')">Exit</button></h1>
+      <h1 style="color: black;">SYNOPSIS AREA </h1>
       <div class="container mt-5 mb-5">
         <div class="row">
           <div class=col>
@@ -486,8 +483,7 @@
     </section>
     <!--THE HAPPY PRINCE SYNOPSIS-->
     <section id="THP_SynopsisAHF">
-      <h1 style="padding-left:10%; color: red;">SYNOPSIS AREA <button type="button" class="btn btn-danger"
-          style="float:right;padding:1% 3%;" onclick="Exit('THP_SynopsisAHF')">Exit</button></h1>
+      <h1 style="color: red;">SYNOPSIS AREA</h1>
       <div class="container mt-5 mb-5">
         <div class="row">
           <div class=col>
@@ -582,8 +578,8 @@
                       <div class="card-body">
                         <!-- BOOKING Data-->
                         <div class="form-group">
-                          <label for="" style="margin-right:140px;"> Adults</label>
-                          <select name="seats[STA]" id="seats-STA" onblur="caculateTotal()">
+                          <label for="seats-STA" style="margin-right:140px;"> Adults</label>
+                          <select name="seats[STA]" id="seats-STA" onblur="caculateTotal()" required > 
                             <option value="">Please select</option>
                             <option value=""></option>
                             <option value="1"> 1</option>
@@ -599,8 +595,8 @@
                           </select>
                         </div>
                         <div class="form-group">
-                          <label for="" style="margin-right:100px">Concession</label>
-                          <select name="seats[STP]" id="seats-STP" onblur="caculateTotal()">
+                          <label for="seats-STA" style="margin-right:100px">Concession</label>
+                          <select name="seats[STP]" id="seats-STP" onblur="caculateTotal()" required>
                             <option value="">Please select</option>
                             <option value=""></option>
                             <option value="1"> 1</option>
@@ -616,8 +612,8 @@
                           </select>
                         </div>
                         <div class="form-group">
-                          <label for="" style="margin-right:123px">Children</label>
-                          <select name="seats[STC]" id="seats-STC" onblur="caculateTotal()">
+                          <label for="seats-STC" style="margin-right:123px">Children</label>
+                          <select name="seats[STC]" id="seats-STC" onblur="caculateTotal()" required>
                             <option value="">Please select</option>
                             <option value=""></option>
                             <option value="1"> 1</option>
@@ -639,8 +635,8 @@
                       <div class="card-header">First Class</div>
                       <div class="card-body">
                         <div class="form-group">
-                          <label for="" style="margin-right:140px;"> Adults</label>
-                          <select name="seats[FCA]" id="seats-FCA" onblur="caculateTotal()">
+                          <label for="seats-FCA" style="margin-right:140px;"> Adults</label>
+                          <select name="seats[FCA]" id="seats-FCA" onblur="caculateTotal()" required>
                             <option value="">Please select</option>
                             <option value=""></option>
                             <option value="1"> 1</option>
@@ -656,8 +652,8 @@
                           </select>
                         </div>
                         <div class="form-group">
-                          <label for="" style="margin-right:100px">Concession</label>
-                          <select name="seats[FCP]" id="seats-FCP" onblur="caculateTotal()">
+                          <label for="seats-FCP" style="margin-right:100px">Concession</label>
+                          <select name="seats[FCP]" id="seats-FCP" onblur="caculateTotal()" required>
                             <option value="">Please select</option>
                             <option value=""></option>
                             <option value="1"> 1</option>
@@ -673,8 +669,8 @@
                           </select>
                         </div>
                         <div class="form-group">
-                          <label for="" style="margin-right:123px">Children</label>
-                          <select name="seats[FCC]" id="seats-FCC" onblur="caculateTotal()">
+                          <label for="seats-FCC" style="margin-right:123px">Children</label>
+                          <select name="seats[FCC]" id="seats-FCC" onblur="caculateTotal()" required>
                             <option value="">Please select</option>
                             <option value=""></option>
                             <option value="1"> 1</option>
@@ -700,15 +696,15 @@
                   <!--HIDDEN DATA-->
                   <div class="col-md-1">
                     <div class="form-group" style="display:none">
-                      <label for="">Movie ID</label>
+                      <label for="movie-id">Movie ID</label>
                       <input type="hidden" name="movie[id]" id="movie-id">
                     </div>
                     <div class="form-group" style="display:none">
-                      <lable for="">Moive Day</lable>
+                      <lable for="movie-day">Moive Day</lable>
                       <input type="hidden" name="movie[day]" id="movie-day">
                     </div>
                     <div class="form-group" style="display:none">
-                      <lable for="">Moive Hour</lable>
+                      <lable for="movie-hour">Moive Hour</lable>
                       <input type="hidden" name="movie[hour]" id="movie-hour">
                     </div>
                   </div>
@@ -718,40 +714,39 @@
                     <div class="card-body">
                       <div class="col-md-5" style="margin-top: 30px">
                         <div class="form-group">
-                          <label for="" style="margin-right:42px">Name</label>
+                          <label for="cust-name" style="margin-right:42px">Name</label>
                           <input type="text" name="cust[name]" id="cust-name" pattern="^[a-zA-Z\-.' ]{1,100}$"
                             required>
                         </div>
                         <div class="form-group">
-                          <label for="" style="margin-right:45px">Email</label>
-                          <input type="email" name="cust[email]" id="cust-email">
+                          <label for="cust-email" style="margin-right:45px">Email</label>
+                          <input type="email" name="cust[email]" id="cust-email" required>
                         </div>
                         <div class="form-group">
-                          <label for="" style="margin-right:35px">Mobile</label>
+                          <label for="cust-mobile" style="margin-right:35px">Mobile</label>
                           <input type="tel" name="cust[mobile]" id="cust-mobile" pattern="^(\(04\)|04|\+614)( ?\d){8}$"
                             required>
 
                         </div>
                         <div class="form-group">
-                          <label for="">Credit Card</label>
+                          <label for="cust-card">Credit Card</label>
                           <input type="text" name="cust[card]" id="cust-card" pattern="^( ?\d){14,19}$" required>
                         </div>
                         <div class="form-group">
-                          <label for="" style="margin-right:35px">Expiry</label>
-                          <input type="month" name="cust[expiry]" id="cust-expiry" onfocus="setmin()">
+                          <label for="cust-expiry" style="margin-right:35px">Expiry</label>
+                          <input type="month" name="cust[expiry]" id="cust-expiry" onfocus="setmin()" required>
                         </div>
                         <div style="margin-top:50px;margin-left:250px">
-                          <button style="width:100px" type="submit" name="order" id="order"
-                            value="order">Order</button>
+                          <button style="width:100px" type="submit" id="order">Order</button>
                         </div>
                       </div>
                     </div>
                   </div>
 
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </form>
 

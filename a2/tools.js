@@ -1,16 +1,35 @@
-function Exit(Which_synopsis) {
-    var synopsis =document.getElementById(Which_synopsis)
-     var booking_area=document.getElementById('Booking_Area')
-    synopsis.style.display ="none"
-    booking_area.style.display ="none"
-    location.href="#Now_Showing"
- }
- 
- 
- function showsynopsis(Which_synopsis){
-     var synopsis=document.getElementById(Which_synopsis) 
-         synopsis.style.display = "block"
-         location.href="#"+Which_synopsis;
+
+
+ function showsynopsis(Which_synopsis){ 
+    var synopsis=document.getElementById(Which_synopsis) 
+    var endgame = document.getElementById("EG_SynopsisACT")
+    var TEW = document.getElementById("TEW_SynopsisRMC")
+    var DB = document.getElementById("DUMBO_SynopsisANM")
+    var THP = document.getElementById("THP_SynopsisAHF")
+    
+    console.log(endgame.style.display);
+    if (endgame.style.display != "none") { 
+        endgame.style.display = "none" 
+        synopsis.style.display = "block" 
+        location.href="#"+Which_synopsis
+    }  
+    else if (TEW.style.display == "block"){
+        TEW.style.display = "none"
+        synopsis.style.display = "block"
+        location.href="#"+Which_synopsis
+    }
+    else if (DB.style.display == "block"){
+        DB.style.display = "none"
+        synopsis.style.display = "block"
+        location.href= "#"+ Which_synopsis
+    }
+    else if (THP.style.display == "block"){
+        THP.style.display = "none"
+        synopsis.style.display = "block"
+        location.href = "#" + Which_synopsis
+    }
+
+   
  }
  
  function showbookingform(){
