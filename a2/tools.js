@@ -34,9 +34,7 @@
  }
  
  function showbookingform(){
-     var booking_area = document.getElementById('Booking_Area')
-         booking_area.style.display = "block" 
-         location.href="#Booking_Area"
+     location.href="#Booking_Area"
          
  }
  function pickmovie(Which_title){
