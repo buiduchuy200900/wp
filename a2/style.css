@@ -76,7 +76,7 @@ table,td,th{
 }
 
 #Now_Showing{
-  height: 950px;
+  height: 830px;
   background-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
 }
 
@@ -86,53 +86,25 @@ table,td,th{
   color: red;
 }
 
-
-#EG_SynopsisACT {
-  display: block ;
+#Synopsis_Area {
   background-image: url(media/Captain.jpg), url(media/IronMan.jpg);
   background-position: right, left ;
   background-repeat: no-repeat, no-repeat;
   background-size: auto, auto;
   height: 700px;
 }
-#EG_SynopsisACT h1 {
+
+#Synopsis_Area h1 {
   color: white;
 }
-#TEW_SynopsisRMC {
-  display: none;
-  background-image: url(media/topendwedding1.jpg);
-  height: 700px;  
-}
-#TEW_SynopsisRMC h1 {
-  color: white;
-}
-#DUMBO_SynopsisANM {
-  display: none;
-  background-image: url(media/Dumbo-background.jpg);
-  height: 750px;  
-}
-#DUMBO_SynopsisANM h1 {
-  color: white;
-}
-#THP_SynopsisAHF {
-  display: none;  
-  background-image: url(media/TheHappyPrince-FILM-panel.jpg);
-  height: 750px;
-}
-#THP_SynopsisAHF h1 {
-  color:black;
-}  
 
 #Booking_Area {
-  background-image: linear-gradient(to bottom, red, black );
-  display: block
-  
+  color: white;
+  background-image: linear-gradient(180deg, red, black);
+  height: 350px;
 }
 
 footer{
   background-color: black;
   color: red;
 }
-
-
-

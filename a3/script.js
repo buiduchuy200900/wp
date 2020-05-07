@@ -135,3 +135,10 @@ function update_hiddenfield(Movie_ID, Movie_Day, Movie_Hour) {
     hidden_Day.value = Movie_Day
     hidden_Hour.value = Movie_Hour
 }
+
+function announcement(movie_ID) {
+    if (movie_ID = null)
+        alert('Order Failed\nYou have not choose a movie')
+    else
+        alert('Order Success\nEnjoy your movie\nThank you!')
+}
