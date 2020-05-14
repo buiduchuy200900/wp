@@ -57,7 +57,6 @@ h1,h3 {
 }
 
 #Prices h1 {
-  text-align:center;
   background-color: orange;
 }
 
@@ -76,17 +75,18 @@ table,td,th{
 }
 
 #Now_Showing{
-  height: 830px;
+  height: 950px;
   background-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
 }
 
 #Now_Showing h1 {
-  text-align: center;
   background-color: black;
   color: red;
 }
 
-#Synopsis_Area {
+
+#EG_SynopsisACT {
+  display: block ;
   background-image: url(media/Captain.jpg), url(media/IronMan.jpg);
   background-position: right, left ;
   background-repeat: no-repeat, no-repeat;
@@ -94,17 +94,45 @@ table,td,th{
   height: 700px;
 }
 
-#Synopsis_Area h1 {
+#EG_SynopsisACT h1 {
   color: white;
 }
 
-#Booking_Area {
+#TEW_SynopsisRMC {
+  display: none;
+  background-image: url(media/topendwedding1.jpg);
+  height: 700px;  
+}
+#TEW_SynopsisRMC h1 {
   color: white;
-  background-image: linear-gradient(180deg, red, black);
-  height: 350px;
+}
+#DUMBO_SynopsisANM {
+  display: none;
+  background-image: url(media/Dumbo-background.jpg);
+  height: 750px;  
+}
+#DUMBO_SynopsisANM h1 {
+  color: white;
+}
+#THP_SynopsisAHF {
+  display: none;  
+  background-image: url(media/TheHappyPrince-FILM-panel.jpg);
+  height: 750px;
+}
+#THP_SynopsisAHF h1 {
+  color:black;
+}  
+
+#Booking_Area {
+  background-image: linear-gradient(to bottom, red, black );
+  display: block
+  
 }
 
 footer{
   background-color: black;
   color: red;
 }
+
+
+
