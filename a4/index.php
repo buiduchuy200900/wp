@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' href='style.css' type='text/css' />
-  <title>Assignment 2</title>
+  <title>Assignment 4</title>
 
   <!-- Keep wireframe.css for debugging, add your css to style.css -->
   <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
@@ -124,7 +124,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!--Navigation Bar-->
   <header>
-    <a href="index.html"><img src="media/logo.png" class="center"></a>
+    <a href="index.php"><img src="media/logo.png" class="center"></a>
   </header>
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
     <ul class="navbar-nav">
