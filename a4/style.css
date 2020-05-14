@@ -1,0 +1,139 @@
+/* Insert your styles here */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background-color: black;
+  }
+  
+  nav {
+    position: sticky;
+    z-index: 9999;
+    background-color: black;
+  }
+  
+  .nav-item
+  {
+    margin-left: 280px;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  
+  #About_Us {
+    background-color: black;
+    color: white;
+    font-size: larger;
+  }
+  
+  #About_Us h1 {
+    background-color: crimson;
+    color: yellow;
+  }
+  
+  .parallax {
+    background-image: url("media/cinema.jpg");
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1,h3 {
+    text-align: center;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #Prices {
+    background-image: url('media/prices.jpg');
+    height: 500px;
+  }
+  
+  #Prices h1 {
+    text-align:center;
+    background-color: orange;
+  }
+  
+  #Prices table{
+    background-color: black;
+    color: white;
+    border: 15px solid orange;
+  }
+  
+  table,td,th{
+    height:50px;
+    border: 2px solid orange;
+    border-collapse: collapse;
+    text-align: center;
+  
+  }
+  
+  #Now_Showing{
+    height: 950px;
+    background-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  }
+  
+  #Now_Showing h1 {
+    text-align: center;
+    background-color: black;
+    color: red;
+  }
+  
+  
+  #EG_SynopsisACT {
+    display: block ;
+    background-image: url(media/Captain.jpg), url(media/IronMan.jpg);
+    background-position: right, left ;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
+    height: 700px;
+  }
+  #EG_SynopsisACT h1 {
+    color: white;
+  }
+  #TEW_SynopsisRMC {
+    display: none;
+    background-image: url(media/topendwedding1.jpg);
+    height: 700px;  
+  }
+  #TEW_SynopsisRMC h1 {
+    color: white;
+  }
+  #DUMBO_SynopsisANM {
+    display: none;
+    background-image: url(media/Dumbo-background.jpg);
+    height: 750px;  
+  }
+  #DUMBO_SynopsisANM h1 {
+    color: white;
+  }
+  #THP_SynopsisAHF {
+    display: none;  
+    background-image: url(media/TheHappyPrince-FILM-panel.jpg);
+    height: 750px;
+  }
+  #THP_SynopsisAHF h1 {
+    color:black;
+  }  
+  
+  #Booking_Area {
+    background-image: linear-gradient(to bottom, red, black );
+    display: block
+    
+  }
+  
+  footer{
+    background-color: black;
+    color: red;
+  }
+  
+  
+  
+  

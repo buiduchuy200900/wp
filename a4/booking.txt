@@ -1,0 +1,4 @@
+"14/05 12:29","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,ACT,WED,T21,1,2,2,2,2,0,$154.00
+"14/05 12:30","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,ACT,WED,T21,1,2,2,2,2,0,$154.00
+"14/05 12:40","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,ACT,WED,T21,1,0,0,0,0,0,$14.00
+"14/05 12:41","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,ACT,WED,T21,0,3,0,0,0,0,$37.50
