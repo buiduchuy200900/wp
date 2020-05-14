@@ -1,1 +1,2 @@
 Date	Name	Email	Mobile	MovieID	Day	Hour	"STA Qty"	"STP Qty"	"STC Qty"	"FCA Qty"	"FCP Qty"	"FCC Qty"	Total
+"14/05 12:44","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,ACT,WED,T21,0,3,0,0,0,0,$37.50

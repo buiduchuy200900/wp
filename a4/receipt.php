@@ -85,7 +85,7 @@
            (array)$total         
         );        
         
-        $myfile = fopen("booking.txt","a"); 
+        $myfile = fopen("bookings.txt","a"); 
         flock($myfile, LOCK_SH);  
         fputcsv($myfile, $cells);
         flock($myfile,LOCK_UN);
