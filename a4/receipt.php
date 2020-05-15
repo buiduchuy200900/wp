@@ -177,7 +177,7 @@
           <tr>
             <th>Seating</th>
             <th>Seat Quantity</th>
-            <th>Amount</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody>
@@ -216,7 +216,10 @@
       </table>
     </div>
     <div id = "total">
-        <?php echo "<p style = 'margin-left: 14px'>Total: $cells[4]</p>"
+        <?php
+        $VAT = "$".number_format(($cells[4] * 10) / 100);
+        echo "<p style = 'text-align: right; margin-right: 14px'>VAT: $VAT<p> ";
+        echo "<p style = 'text-align: right; margin-right: 14px'>Total: $cells[4]</p>"
         ?>
     </div>
 </page>

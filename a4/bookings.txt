@@ -187,3 +187,13 @@ Date	Name	Email	Mobile	MovieID	Day	Hour	"STA Qty"	"STP Qty"	"STC Qty"	"FCA Qty"	
 "15/05 11:49","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,ACT,WED,T21,1,0,0,0,0,0,$14.00
 "15/05 11:49","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,ACT,WED,T21,1,0,0,0,0,0,$14.00
 "15/05 11:51","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,ACT,WED,T21,1,0,0,0,0,0,$14.00
+"15/05 02:43","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 02:48","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 02:51","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 02:51","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 02:52","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 02:53","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 02:54","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 02:54","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 02:54","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 03:04","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
