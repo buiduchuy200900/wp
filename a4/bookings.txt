@@ -197,3 +197,29 @@ Date	Name	Email	Mobile	MovieID	Day	Hour	"STA Qty"	"STP Qty"	"STC Qty"	"FCA Qty"	
 "15/05 02:54","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
 "15/05 02:54","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
 "15/05 03:04","Quoc Huy Ngu",quochuyngu@gmail.com,"+614 1234 5325",ACT,WED,T21,3,0,0,3,0,0,$114.00
+"15/05 03:10","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:15","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:25","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:26","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:27","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:28","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:28","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:28","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:28","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:28","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:28","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:29","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:30","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:30","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:31","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:31","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:32","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:33","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:37","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:37","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:41","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:42","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:44","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:45","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:48","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,AHF,WED,T12,2,2,2,1,0,1,$120.00
+"15/05 03:50","nguyen quoc huy",s3818764@rmit.edu.vn,0412345678,ACT,WED,T21,1,1,4,1,1,7,$264.00

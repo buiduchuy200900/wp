@@ -101,7 +101,8 @@
                 $FCCamount = $priceFCC * $FCCQty;
         
         # Total     
-                $total =  "$".number_format(($STAamount + $STPamount + $STCamount + $FCAamount + $FCPamount + $FCCamount),2); 
+                $subtotal =  $STAamount + $STPamount + $STCamount + $FCAamount + $FCPamount + $FCCamount;
+                $subtotaldecimal ="$".number_format($subtotal,2); 
         # Add order to tab spreadsheet
         date_default_timezone_set("Asia/Bangkok");
         $now = date('d/m h:i');  
@@ -112,7 +113,7 @@
            (array)$_SESSION["cust"]["mobile"],
            (array)$_SESSION["movie"],
            (array)$_SESSION["seats"],
-           (array)$total      
+           (array)$subtotaldecimal
         );        
         
         $myfile = fopen("bookings.txt","a"); 
@@ -120,6 +121,19 @@
         fputcsv($myfile, $cells);
         flock($myfile,LOCK_UN);
         fclose($myfile);
+        # Check the movie tile
+        if($_SESSION["movie"]["id"]=="ACT"){
+          $movietitle= "END GAME";         
+        };
+        if($_SESSION["movie"]["id"]=="RMC"){
+          $movietitle="TOP END WEDDING";
+        };
+        if($_SESSION["movie"]["id"]=="ANM"){
+          $movietitle="DUMBO";
+        }
+        if($_SESSION["movie"]["id"]=="AHF"){
+          $movietitle="THE HAPPY PRICE";
+        }
         ?>
 <page size="A4">
   <img class ="center" src = "media/logo.png">
@@ -163,9 +177,11 @@
       </div>
       <div class = col-sm-6>
         <?php 
-        echo "<p style = 'text-align:right'>Movie: $cells[4]</p>";
+        $day =$_SESSION["movie"]["day"];
+        $hour = $_SESSION["movie"]["hour"];
+        echo "<p style = 'text-align:right'>Movie: $movietitle</p>";
 
-        echo "<p style = 'text-align:right'>Seating: $cells[5]</p>"; 
+        echo "<p style = 'text-align:right'>Day-Hour:$day, $hour</p>"; 
         ?>
       </div>
     </div>
@@ -215,13 +231,78 @@
         </tbody>
       </table>
     </div>
-    <div id = "total">
+    <div id = "total">     
         <?php
-        $VAT = "$".number_format(($cells[4] * 10) / 100);
-        echo "<p style = 'text-align: right; margin-right: 14px'>VAT: $VAT<p> ";
-        echo "<p style = 'text-align: right; margin-right: 14px'>Total: $cells[4]</p>"
+        $VAT = "$".number_format(($subtotal *10/100),2);
+        $total = "$".number_format((($subtotal *10/100) + $subtotal),2);
+        echo "<h5 style = 'text-align: right; margin-right: 14px'>VAT:$VAT</h5> ";
+        echo "<h5 style = 'text-align: right; margin-right: 14px'>Sub Total: $subtotaldecimal</h5>";
+        echo "<h5 style = 'text-align: right; margin-right: 14px'>Total: $total</h5>";
         ?>
     </div>
 </page>
+<!-- Ticket Section -->
+<?php
+     #Show only ticket that got values > 0
+     foreach($_SESSION["seats"] as $key => $value){
+      if ($_SESSION["seats"][$key]>0){
+        $movieseat[$key]= $value;
+      }
+    } 
+  ?>   
+    <!-- Show the ticket -->
+    <?php 
+    foreach($movieseat as $seat => $seatQty) { ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Bootstrap 4 Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="card">
+              <div class="card-header" style="border: solid;background-color:gold">
+                <h2 style="text-align:center;color:red">THE CINEMAX TICKET</h2>
+              </div>
+              <div class="card-body"  style="border:solid;background-color:gold;">
+                <div class="row">
+                  <div class="col-4" style="border:2px gray solid">
+                    <img src="media/logo.png" class="img-fluid">
+                    <h1 style="text-align: center;font-family:serif;font-size:80px"><?php echo $seatQty ?></h1>
+                    <h1 style="text-align: center;font-family:serif;"; class="mt-5"><em><?php echo $seat ?></em></h1>
+                  </div>
+                  <div class="col-8" style="border:2px gray solid">
+                    <h4><?php echo $_SESSION["cust"]["name"] ?></h4>
+                    <p style="color:slategrey"> Name </p>
+                    <h4><?php echo $movietitle?></h4>
+                    <p style="color:slategrey"> Movie </p>
+                    <h4><?php echo $now?></h4>
+                    <p style="color:slategrey"> Time</p>
+                    <h4><?php echo $seatQty ?></h4>
+                    <p style="color:slategrey"><?php echo $seat ?></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </body>
+    </html>
+    <?php } ?>
+?>
+        
 </body>
 </html>
