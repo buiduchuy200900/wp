@@ -169,37 +169,61 @@
         ?>
       </div>
     </div>
+  </div>
     <br>
     <div class="container">         
       <table class="table">
         <thead>
           <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
+            <th>Seating</th>
+            <th>Seat Quantity</th>
+            <th>Amount</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
+            <td>STA</td>
+            <?php echo $STAQty;
+            echo $STAamount
+            ?>
           </tr>
           <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
+            <td>STP</td>
+            <?php echo $STPQty;
+            echo $STPamount
+            ?>
           </tr>
           <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
+            <td>STC</td>
+            <?php echo $STCQty;
+            echo $STCamount
+            ?>
+          </tr>
+          <tr>
+            <td>FCA</td>
+            <?php echo $FCAQty;
+            echo $FCAamount
+            ?>
+          </tr>
+          <tr>
+            <td>FCP</td>
+            <?php echo $FCPQty;
+            echo $FCPamount
+            ?>
+          </tr>
+          <tr>
+            <td>FCC</td>
+            <?php echo $FCCQty;
+            echo $FCCamount
+            ?>
           </tr>
         </tbody>
       </table>
     </div>
-  </div>
-
+    <div id = "total">
+        <?php echo "<p style = 'margin-left: 14px'>Total: $cells[4]</p>"
+        ?>
+    </div>
 </page>
 </body>
 </html>
