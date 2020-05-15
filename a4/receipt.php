@@ -183,39 +183,34 @@
         <tbody>
           <tr>
             <td>STA</td>
-            <?php echo $STAQty;
-            echo $STAamount
-            ?>
+            <td><?php echo $STAQty; ?> </td>
+            <td><?php echo "$".number_format($STAamount,2); ?> </td>
+            <td></td>
           </tr>
           <tr>
             <td>STP</td>
-            <?php echo $STPQty;
-            echo $STPamount
-            ?>
+            <td><?php echo $STPQty; ?> </td>
+            <td><?php echo "$".number_format($STPamount,2); ?> </td>       
           </tr>
           <tr>
             <td>STC</td>
-            <?php echo $STCQty;
-            echo $STCamount
-            ?>
+            <td><?php echo $STCQty; ?> </td>
+            <td><?php echo "$".number_format($STCamount,2); ?> </td>
           </tr>
           <tr>
             <td>FCA</td>
-            <?php echo $FCAQty;
-            echo $FCAamount
-            ?>
+            <td><?php echo $FCAQty; ?> </td>
+            <td><?php echo "$".number_format($FCAamount,2); ?> </td>
           </tr>
           <tr>
             <td>FCP</td>
-            <?php echo $FCPQty;
-            echo $FCPamount
-            ?>
+            <td><?php echo $FCPQty; ?> </td>
+            <td><?php echo "$".number_format($FCPamount,2); ?> </td>
           </tr>
           <tr>
             <td>FCC</td>
-            <?php echo $FCCQty;
-            echo $FCCamount
-            ?>
+            <td><?php echo $FCCQty; ?> </td>
+            <td><?php echo "$".number_format($FCCamount,2); ?> </td>
           </tr>
         </tbody>
       </table>
