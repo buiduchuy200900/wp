@@ -256,7 +256,6 @@
     <!DOCTYPE html>
     <html lang="en">
     <head>
-      <title>Bootstrap 4 Example</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -280,14 +279,14 @@
                     <h1 style="text-align: center;font-family:serif;"; class="mt-5"><em><?php echo $seat ?></em></h1>
                   </div>
                   <div class="col-8" style="border:2px gray solid">
-                    <h4><?php echo $_SESSION["cust"]["name"] ?></h4>
                     <p style="color:slategrey"> Name </p>
-                    <h4><?php echo $movietitle?></h4>
+                    <h4><?php echo $_SESSION["cust"]["name"] ?></h4>
                     <p style="color:slategrey"> Movie </p>
-                    <h4><?php echo $now?></h4>
+                    <h4><?php echo $movietitle?></h4>
                     <p style="color:slategrey"> Time</p>
-                    <h4><?php echo $seatQty ?></h4>
+                    <h4><?php echo $day . " and ". $hour?></h4>
                     <p style="color:slategrey"><?php echo $seat ?></p>
+                    <h4><?php echo $seatQty ?></h4>
                   </div>
                 </div>
               </div>

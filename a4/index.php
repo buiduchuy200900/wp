@@ -865,7 +865,7 @@
       <p>GROUP 6</p>
       <p>Bui Duc Huy - s3817842</p>
       <p>Nguyen Quoc Huy- s3818764</p>
-      <p>Last date modified: 16/4/2020</p>
+      <p>Last date modified: 15/5/2020</p>
       <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
     <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
       Programming course at RMIT University in Melbourne, Australia.</div>
