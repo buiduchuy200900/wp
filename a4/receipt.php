@@ -259,8 +259,7 @@
   ?>   
     <!-- Show the ticket -->
     <?php 
-    foreach($movieseat as $seat => $seatQty) { 
-      for ($pos = 1; $pos <= $seatQty; $pos++){?>
+    foreach($movieseat as $seat => $seatQty) { ?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -309,7 +308,7 @@
     </body>
     </html>
     <?php }
-    } ?>
+    ?>
         
 </body>
 </html>
