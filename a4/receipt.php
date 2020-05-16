@@ -9,6 +9,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Invoice</title>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         background-image: url(media/cinema-invoice.jpg); 
       }
@@ -240,19 +243,24 @@
         echo "<h5 style = 'text-align: right; margin-right: 14px'>Total: $total</h5>";
         ?>
     </div>
+    <a href = "index.php"><button style = "margin-left:35%; margin-top: 5%" type="button" class="btn btn-outline-danger">Return</button></a>
+    <a href = "#ticket"><button style = "margin-left:5%; margin-top: 5%" type="button" class="btn btn-outline-danger">Confirm</button></a>
 </page>
+
+<div id = "ticket">
 <!-- Ticket Section -->
 <?php
      #Show only ticket that got values > 0
      foreach($_SESSION["seats"] as $key => $value){
       if ($_SESSION["seats"][$key]>0){
-        $movieseat[$key]= $value;
+          $movieseat[$key]= $value;
       }
     } 
   ?>   
     <!-- Show the ticket -->
     <?php 
-    foreach($movieseat as $seat => $seatQty) { ?>
+    foreach($movieseat as $seat => $seatQty) { 
+      for ($pos = 1; $pos <= $seatQty; $pos++){?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -275,7 +283,7 @@
                 <div class="row">
                   <div class="col-4" style="border:2px gray solid">
                     <img src="media/logo.png" class="img-fluid">
-                    <h1 style="text-align: center;font-family:serif;font-size:80px"><?php echo $seatQty ?></h1>
+                    <h1 style="text-align: center;font-family:serif;font-size:80px"><?php echo $pos ?></h1>
                     <h1 style="text-align: center;font-family:serif;"; class="mt-5"><em><?php echo $seat ?></em></h1>
                   </div>
                   <div class="col-8" style="border:2px gray solid">
@@ -286,7 +294,7 @@
                     <p style="color:slategrey"> Time</p>
                     <h4><?php echo $day . " and ". $hour?></h4>
                     <p style="color:slategrey"><?php echo $seat ?></p>
-                    <h4><?php echo $seatQty ?></h4>
+                    <h4><?php echo $pos ?></h4>
                   </div>
                 </div>
               </div>
@@ -297,11 +305,11 @@
 
       </div>
 
-
+    </div>
     </body>
     </html>
-    <?php } ?>
-?>
+    <?php }
+    } ?>
         
 </body>
 </html>
