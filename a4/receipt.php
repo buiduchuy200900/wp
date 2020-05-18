@@ -18,7 +18,7 @@
       page[size="A4"] {
         background: white;
         width: 60%;
-        height: 29.7cm;
+        height: 130%;
         display: block;
         margin: 0 auto;
         margin-bottom: 0.5cm;
@@ -42,7 +42,6 @@
     <?php
         session_start();
         include 'tools.php';
-        #preShow($_SESSION); # take the comment out if you want to see the session
         #Check if the session empty or not 
         if(!isset($_SESSION)){
           header("Location: index.php");
@@ -125,18 +124,19 @@
         fclose($myfile);
         # Check the movie tile
         if($_SESSION["movie"]["id"]=="ACT"){
-          $movietitle= "END GAME";         
+          $_SESSION["movietitle"] = "END GAME";   
         };
         if($_SESSION["movie"]["id"]=="RMC"){
-          $movietitle="TOP END WEDDING";
+          $_SESSION["movietitle"] = "TOP END WEDDING"; 
         };
         if($_SESSION["movie"]["id"]=="ANM"){
-          $movietitle="DUMBO";
+          $_SESSION["movietitle"] = "DUMBO"; 
         }
         if($_SESSION["movie"]["id"]=="AHF"){
-          $movietitle="THE HAPPY PRICE";
+          $_SESSION["movietitle"] = "THE HAPPY PRICE"; 
         }
         ?>
+<!-- Invoice form -->
 <page size="A4">
   <img class ="center" src = "media/logo.png">
   <div class = "container">
@@ -163,33 +163,22 @@
   <br>
   <div class = "container">
     <div class = "row">
-      <div class = col-sm-6>
+      <div class = "col-md-6 col-lg-8">
         <h4>BILLED TO</h4>
+        <p> Customer name: <?php echo $cells[1];?> </p>
+        <p> Email: <?php echo $cells[2];?> </p>
+        <p> Phone Number: <?php echo $cells[3];?> </p>
       </div>
-      <div class = col-sm-6>
-        <h4 style ="text-align: right">Movie Infor</h4>
-      </div>
-      <div class = col-sm-6>
-        <?php 
-        echo "Customer Name: $cells[1]";
-        echo "<br>";
-        echo "Email: $cells[2]";
-        echo "<br>";
-        echo "Phone Number: $cells[3]"; ?>
-      </div>
-      <div class = col-sm-6>
-        <?php 
-        $day =$_SESSION["movie"]["day"];
-        $hour = $_SESSION["movie"]["hour"];
-        echo "<p style = 'text-align:right'>Movie: $movietitle</p>";
-
-        echo "<p style = 'text-align:right'>Day-Hour:$day, $hour</p>"; 
-        ?>
+      <div class = "col-md-6 col-lg-4">
+        <h4 >Movie Infor</h4>
+        <p >Movie: <?php echo $_SESSION["movietitle"];?></p>
+        <p >Day-Hour:<?php echo $_SESSION["movie"]["day"]. " - " . $_SESSION["movie"]["hour"];?></p>    
       </div>
     </div>
   </div>
     <br>
-    <div class="container">         
+    <div class="container">
+      <div class="table-responsive"> 
       <table class="table">
         <thead>
           <tr>
@@ -232,6 +221,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
     <div id = "total">     
         <?php
@@ -242,72 +232,17 @@
         echo "<h5 style = 'text-align: right; margin-right: 14px'>Total: $total</h5>";
         ?>
     </div>
-    <a href = "index.php"><button style = "margin-left:35%; margin-top: 5%" type="button" class="btn btn-outline-danger">Return</button></a>
-    <a href = "#ticket"><button style = "margin-left:5%; margin-top: 5%" type="button" class="btn btn-outline-danger">Confirm</button></a>
-</page>
-
-<div id = "ticket">
-<!-- Ticket Section -->
-<?php
-     #Show only ticket that got values > 0
-     foreach($_SESSION["seats"] as $key => $value){
-      if ($_SESSION["seats"][$key]>0){
-          $movieseat[$key]= $value;
-      }
-    } 
-  ?>   
-    <!-- Show the ticket -->
-    <?php 
-    foreach($movieseat as $seat => $seatQty) { ?>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-      <div class="container mt-5">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="card">
-              <div class="card-header" style="border: solid;background-color:gold">
-                <h2 style="text-align:center;color:red">THE CINEMAX TICKET</h2>
-              </div>
-              <div class="card-body"  style="border:solid;background-color:gold;">
-                <div class="row">
-                  <div class="col-4" style="border:2px gray solid">
-                    <img src="media/logo.png" class="img-fluid">
-                    <h1 style="text-align: center;font-family:serif;font-size:80px"><?php echo $pos ?></h1>
-                    <h1 style="text-align: center;font-family:serif;"; class="mt-5"><em><?php echo $seat ?></em></h1>
-                  </div>
-                  <div class="col-8" style="border:2px gray solid">
-                    <p style="color:slategrey"> Name </p>
-                    <h4><?php echo $_SESSION["cust"]["name"] ?></h4>
-                    <p style="color:slategrey"> Movie </p>
-                    <h4><?php echo $movietitle?></h4>
-                    <p style="color:slategrey"> Time</p>
-                    <h4><?php echo $day . " and ". $hour?></h4>
-                    <p style="color:slategrey"><?php echo $seat ?></p>
-                    <h4><?php echo $pos ?></h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+    <div class="row mb-3 justify-content-center">
+        <div class="col-4">
+          <div class="text-center">
+            <a href = "index.php" ><button  type="button" class="btn btn-outline-danger">Return</button></a>
           </div>
         </div>
-
-      </div>
-
+        <div class="col-4">
+          <div class="text-center">
+            <a href = "ticket.php" ><button  type="button" class="btn btn-outline-danger">Confirm</button></a>
+          </div>
+        </div>
     </div>
-    </body>
-    </html>
-    <?php }
-    ?>
-        
-</body>
-</html>
+    <!-- preShow($_SESSION);  take the comment out if you want to see the session -->
+</page>
