@@ -118,8 +118,7 @@
            (array)$_SESSION["seats"],
            (array)$subtotaldecimal
         );        
-        
-        $myfile = fopen("bookings.txt","a"); 
+        $myfile = fopen("bookings.csv","a"); 
         flock($myfile, LOCK_SH);  
         fputcsv($myfile, $cells);
         flock($myfile,LOCK_UN);
