@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<style>
+.filterDiv {
+        float: left;
+        margin: 2px;
+        display: none;
+    }
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+</style>
+<body>
+
+<h2>Filter DIV Elements</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"><a href="#"> Show all</a></button>
+  <button class="btn" onclick="filterSelection('cars')"><a href="#"> Cars</a></button>
+  <button class="btn" onclick="filterSelection('animals')"><a href="#"> Animals</a></button>
+  <button class="btn" onclick="filterSelection('fruits')"><a href="#"> Fruits</a></button>
+  <button class="btn" onclick="filterSelection('colors')"><a href="#"> Colors</a></button>
+</div>
+
+<div class="col-md-8">
+    <div class="product_list">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv colors">
+                    <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Cervical pillow for airplane
+                    car office nap pillow</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv cars">
+                    <img src="assets/img/categori/product2.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv animals">
+                    <img src="assets/img/categori/product5.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv cars">
+                    <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv animals">
+                    <img src="assets/img/categori/product1.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv fruits">
+                    <img src="assets/img/categori/product4.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain relief</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv cars">
+                    <img src="assets/img/categori/product5.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv fruits">
+                    <img src="assets/img/categori/product3.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain relief</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv cars">
+                    <img src="assets/img/categori/product2.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="single_product_item">
+                    <div class="filterDiv colors">
+                    <img src="assets/img/categori/product1.png" alt="" class="img-fluid">
+                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
+                    <p>From $5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

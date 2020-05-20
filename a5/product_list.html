@@ -1,5 +1,20 @@
 <!doctype html>
 <html lang="zxx">
+<style>
+    .filterDiv {
+        float: left;
+        margin: 2px;
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+
+    .container {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+</style>
 
 <head>
 
@@ -12,17 +27,17 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- CSS here -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/flaticon.css">
-        <link rel="stylesheet" href="assets/css/slicknav.css">
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="assets/css/themify-icons.css">
-        <link rel="stylesheet" href="assets/css/slick.css">
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
@@ -30,11 +45,11 @@
 
     <header>
         <!-- Header Start -->
-       <div class="header-area">
+        <div class="header-area">
             <div class="main-header ">
                 <div class="header-top top-bg d-none d-lg-block">
-                   <div class="container-fluid">
-                       <div class="col-xl-12">
+                    <div class="container-fluid">
+                        <div class="col-xl-12">
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left d-flex">
                                     <div class="flag">
@@ -52,37 +67,37 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <ul class="contact-now">     
+                                    <ul class="contact-now">
                                         <li>+777 2345 7886</li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
-                                   <ul>                                          
-                                       <li><a href="login.html">My Account </a></li>
-                                       <li><a href="product_list.html">Wish List  </a></li>
-                                       <li><a href="cart.html">Shopping</a></li>
-                                       <li><a href="cart.html">Cart</a></li>
-                                       <li><a href="checkout.html">Checkout</a></li>
-                                   </ul>
+                                    <ul>
+                                        <li><a href="login.html">My Account </a></li>
+                                        <li><a href="product_list.html">Wish List </a></li>
+                                        <li><a href="cart.html">Shopping</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                       </div>
-                   </div>
+                        </div>
+                    </div>
                 </div>
-               <div class="header-bottom  header-sticky">
+                <div class="header-bottom  header-sticky">
                     <div class="container-fluid">
                         <div class="row align-items-center">
                             <!-- Logo -->
                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div class="logo">
-                                  <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
                                 <!-- Main-menu -->
                                 <div class="main-menu f-right d-none d-lg-block">
-                                    <nav>                                                
-                                        <ul id="navigation">                                                                                                                                     
+                                    <nav>
+                                        <ul id="navigation">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="Catagori.html">Catagori</a></li>
                                             <li class="hot"><a href="#">Latest</a>
@@ -112,7 +127,7 @@
                                         </ul>
                                     </nav>
                                 </div>
-                            </div> 
+                            </div>
                             <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li class="d-none d-xl-block">
@@ -122,7 +137,7 @@
                                                 <i class="fas fa-search special-tag"></i>
                                             </div>
                                         </div>
-                                     </li>
+                                    </li>
                                     <li class=" d-none d-xl-block">
                                         <div class="favorit-items">
                                             <i class="far fa-heart"></i>
@@ -133,7 +148,7 @@
                                             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                                         </div>
                                     </li>
-                                   <li class="d-none d-lg-block"> <a href="#" class="btn header-btn">Sign in</a></li>
+                                    <li class="d-none d-lg-block"> <a href="#" class="btn header-btn">Sign in</a></li>
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->
@@ -142,16 +157,17 @@
                             </div>
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
-       </div>
+        </div>
         <!-- Header End -->
     </header>
 
     <!-- slider Area Start-->
     <div class="slider-area ">
         <!-- Mobile Menu -->
-        <div class="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+        <div class="single-slider slider-height2 d-flex align-items-center"
+            data-background="assets/img/hero/category.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -164,9 +180,9 @@
         </div>
     </div>
     <!-- slider Area End-->
-    
+
     <!-- product list part start-->
-    <section class="product_list section_padding">
+    <section id="product_list" class="product_list section_padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -181,10 +197,18 @@
                             <div class="select_option">
                                 <div class="select_option_list">Category <i class="right fas fa-caret-down"></i> </div>
                                 <div class="select_option_dropdown">
-                                    <p><a href="#">Category 1</a></p>
-                                    <p><a href="#">Category 2</a></p>
-                                    <p><a href="#">Category 3</a></p>
-                                    <p><a href="#">Category 4</a></p>
+                                    <div id="myBtnContainer">
+                                        <p><button class="btn active" onclick="filterSelection('all')"><a href="#product_list"> Show
+                                                all</a></button></p>
+                                        <p><button class="btn" onclick="filterSelection('cars')"><a href="#product_list">
+                                                Adidas</a></button></p>
+                                        <p><button class="btn" onclick="filterSelection('animals')"><a href="#product_list">
+                                                Nike</a></button></p>
+                                        <p><button class="btn" onclick="filterSelection('fruits')"><a href="#product_list">
+                                                Puma</a></button></p>
+                                        <p><button class="btn" onclick="filterSelection('colors')"><a href="#product_list">
+                                                New Balance</a></button></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -206,78 +230,104 @@
                         <div class="row">
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Cervical pillow for airplane
-                                    car office nap pillow</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv colors">
+                                        <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Cervical pillow for airplane
+                                                car office nap pillow</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product2.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv cars">
+                                        <img src="assets/img/categori/product2.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Geometric striped flower home classy
+                                                decor</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product5.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv animals">
+                                        <img src="assets/img/categori/product5.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a>
+                                        </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv cars">
+                                        <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound
+                                                pillows</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product1.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv animals">
+                                        <img src="assets/img/categori/product1.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound
+                                                pillows</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product4.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain relief</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv fruits">
+                                        <img src="assets/img/categori/product4.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint
+                                                Pain relief</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product5.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv cars">
+                                        <img src="assets/img/categori/product5.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound
+                                                pillows</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product3.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain relief</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv fruits">
+                                        <img src="assets/img/categori/product3.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint
+                                                Pain relief</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product2.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv cars">
+                                        <img src="assets/img/categori/product2.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Geometric striped flower home classy
+                                                decor</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product1.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
-                                    <p>From $5</p>
+                                    <div class="filterDiv colors">
+                                        <img src="assets/img/categori/product1.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Geometric striped flower home classy
+                                                decor</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="load_more_btn text-center">
-                            <a href="#" class="btn_3">Load More</a>
                         </div>
                     </div>
                 </div>
@@ -285,7 +335,7 @@
         </div>
     </section>
     <!-- product list part end-->
-    
+
     <!-- client review part here -->
     <section class="client_review">
         <div class="container">
@@ -296,21 +346,24 @@
                             <div class="client_img">
                                 <img src="assets/img/client.png" alt="#">
                             </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
+                                help alleviate human suffering.</p>
                             <h5>- Micky Mouse</h5>
                         </div>
                         <div class="single_client_review">
                             <div class="client_img">
                                 <img src="assets/img/client_1.png" alt="#">
                             </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
+                                help alleviate human suffering.</p>
                             <h5>- Micky Mouse</h5>
                         </div>
                         <div class="single_client_review">
                             <div class="client_img">
                                 <img src="assets/img/client_2.png" alt="#">
                             </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
+                                help alleviate human suffering.</p>
                             <h5>- Micky Mouse</h5>
                         </div>
                     </div>
@@ -337,7 +390,7 @@
                         <h6>Secure Payment System</h6>
                         <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
                     </div>
-                </div> 
+                </div>
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-method mb-40">
                         <i class="ti-reload"></i>
@@ -357,7 +410,8 @@
                 <div class="col-lg-8">
                     <div class="subscribe_part_content">
                         <h2>Get promotions & updates!</h2>
-                        <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources credibly innovate granular internal .</p>
+                        <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic”
+                            sources credibly innovate granular internal .</p>
                         <div class="subscribe_form">
                             <input type="email" placeholder="Enter your mail">
                             <a href="#" class="btn_1">Subscribe</a>
@@ -375,19 +429,20 @@
             <div class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
-                       <div class="single-footer-caption mb-50">
-                         <div class="single-footer-caption mb-30">
-                              <!-- logo -->
-                             <div class="footer-logo">
-                                 <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                             </div>
-                             <div class="footer-tittle">
-                                 <div class="footer-pera">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                                 </div>
-                             </div>
-                         </div>
-                       </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
+                                            tempor incididunt ut labore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
                         <div class="single-footer-caption mb-50">
@@ -397,7 +452,7 @@
                                     <li><a href="#">About</a></li>
                                     <li><a href="#"> Offers & Discounts</a></li>
                                     <li><a href="#"> Get Coupon</a></li>
-                                    <li><a href="#">  Contact Us</a></li>
+                                    <li><a href="#"> Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -420,86 +475,135 @@
                             <div class="footer-tittle">
                                 <h4>Support</h4>
                                 <ul>
-                                 <li><a href="#">Frequently Asked Questions</a></li>
-                                 <li><a href="#">Terms & Conditions</a></li>
-                                 <li><a href="#">Privacy Policy</a></li>
-                                 <li><a href="#">Privacy Policy</a></li>
-                                 <li><a href="#">Report a Payment Issue</a></li>
-                             </ul>
+                                    <li><a href="#">Frequently Asked Questions</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Report a Payment Issue</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Footer bottom -->
                 <div class="row">
-                 <div class="col-xl-7 col-lg-7 col-md-7">
-                     <div class="footer-copy-right">
-                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>                   </div>
-                 </div>
-                  <div class="col-xl-5 col-lg-5 col-md-5">
-                     <div class="footer-copy-right f-right">
-                         <!-- social -->
-                         <div class="footer-social">
-                             <a href="#"><i class="fab fa-twitter"></i></a>
-                             <a href="#"><i class="fab fa-facebook-f"></i></a>
-                             <a href="#"><i class="fab fa-behance"></i></a>
-                             <a href="#"><i class="fas fa-globe"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <div class="footer-copy-right">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="ti-heart" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="footer-copy-right f-right">
+                            <!-- social -->
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
- 
+
         <!-- Footer End-->
     </footer>
 
-<!-- JS here -->
-        <!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-        
-        <!-- Jquery, Popper, Bootstrap -->
-        <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-        <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <!-- JS here -->
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 
-        <!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-        <!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-        <script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
 
-        <!-- Scrollup, nice-select, sticky -->
-        <script src="./assets/js/jquery.scrollUp.min.js"></script>
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-        <script src="./assets/js/jquery.sticky.js"></script>
-        
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-        
-        <!-- Jquery Plugins, main Jquery -->    
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
 
-        <!-- swiper js -->
-        <script src="./assets/js/swiper.min.js"></script>
-            <!-- swiper js -->
-        <script src="./assets/js/mixitup.min.js"></script>
-        <script src="./assets/js/jquery.counterup.min.js"></script>
-        <script src="./assets/js/waypoints.min.js"></script>
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
 
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <!-- swiper js -->
+    <script src="./assets/js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="./assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
