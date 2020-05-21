@@ -6,6 +6,7 @@
         margin: 2px;
         display: none;
     }
+
     .show {
         display: block;
     }
@@ -13,6 +14,12 @@
     .container {
         margin-top: 20px;
         overflow: hidden;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
 
@@ -185,7 +192,7 @@
     <section id="product_list" class="product_list section_padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="product_sidebar">
                         <div class="single_sedebar">
                             <form action="#">
@@ -198,16 +205,27 @@
                                 <div class="select_option_list">Category <i class="right fas fa-caret-down"></i> </div>
                                 <div class="select_option_dropdown">
                                     <div id="myBtnContainer">
-                                        <p><button class="btn active" onclick="filterSelection('all')"><a href="#product_list"> Show
-                                                all</a></button></p>
-                                        <p><button class="btn" onclick="filterSelection('cars')"><a href="#product_list">
-                                                Adidas</a></button></p>
-                                        <p><button class="btn" onclick="filterSelection('animals')"><a href="#product_list">
-                                                Nike</a></button></p>
-                                        <p><button class="btn" onclick="filterSelection('fruits')"><a href="#product_list">
-                                                Puma</a></button></p>
-                                        <p><button class="btn" onclick="filterSelection('colors')"><a href="#product_list">
-                                                New Balance</a></button></p>
+                                        <p><button class="btn active" onclick="filterSelection('all')"><a
+                                                    href="#product_list"> Show
+                                                    all</a></button></p>
+                                        <p><button class="btn" onclick="filterSelection('football')"><a
+                                                    href="#product_list">
+                                                    Football</a></button></p>
+                                        <p><button class="btn" onclick="filterSelection('basketball')"><a
+                                                    href="#product_list">
+                                                    Basketball</a></button></p>
+                                        <p><button class="btn" onclick="filterSelection('tennis')"><a
+                                                    href="#product_list">
+                                                    Tennis</a></button></p>
+                                        <p><button class="btn" onclick="filterSelection('baseball')"><a
+                                                    href="#product_list">
+                                                    Baseball</a></button></p>            
+                                        <p><button class="btn" onclick="filterSelection('gym')"><a
+                                                    href="#product_list">
+                                                    Gym</a></button></p>
+                                        <p><button class="btn" onclick="filterSelection('table_tennis')"><a
+                                                    href="#product_list">
+                                                    Table Tennis</a></button></p>
                                     </div>
                                 </div>
                             </div>
@@ -225,108 +243,162 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <div class="product_list">
                         <div class="row">
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="single_product_item">
-                                    <div class="filterDiv colors">
-                                        <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Cervical pillow for airplane
-                                                car office nap pillow</a> </h3>
+                                    <div class="filterDiv football">
+                                        <img src="assets/img/categori/football.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Fifa World Cup Russia 2018 Original Ball</a> </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="single_product_item">
-                                    <div class="filterDiv cars">
-                                        <img src="assets/img/categori/product2.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Geometric striped flower home classy
-                                                decor</a> </h3>
+                                    <div class="filterDiv football">
+                                        <img src="assets/img/categori/RM_kit.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Real Madrid kit 2017/2018</a> </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="single_product_item">
-                                    <div class="filterDiv animals">
-                                        <img src="assets/img/categori/product5.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a>
+                                    <div class="filterDiv baseball">
+                                        <img src="assets/img/categori/Daco_612429.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Los Angeles Angles kit</a>
                                         </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="single_product_item">
-                                    <div class="filterDiv cars">
-                                        <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound
-                                                pillows</a> </h3>
+                                    <div class="filterDiv basketball">
+                                        <img src="assets/img/categori/basketball.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">TF - 500 / SPALDING Ball</a> </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="single_product_item">
-                                    <div class="filterDiv animals">
-                                        <img src="assets/img/categori/product1.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound
-                                                pillows</a> </h3>
+                                    <div class="filterDiv gym">
+                                        <img src="assets/img/categori/female_clothing.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Female Gym Clothing</a> </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="single_product_item">
-                                    <div class="filterDiv fruits">
-                                        <img src="assets/img/categori/product4.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint
-                                                Pain relief</a> </h3>
+                                    <div class="filterDiv gym">
+                                        <img src="assets/img/categori/running_shoes.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Adidas Running Shoes</a> </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="single_product_item">
-                                    <div class="filterDiv cars">
-                                        <img src="assets/img/categori/product5.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound
-                                                pillows</a> </h3>
+                                    <div class="filterDiv football">
+                                        <img src="assets/img/categori/football_shoes.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Nike Football Shoes - Adrea Pirlo Version</a> </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="single_product_item">
-                                    <div class="filterDiv fruits">
-                                        <img src="assets/img/categori/product3.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint
-                                                Pain relief</a> </h3>
+                                    <div class="filterDiv baseball">
+                                        <img src="assets/img/categori/baseball-glove.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Puma Baseball Glove 2020</a> </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="single_product_item">
-                                    <div class="filterDiv cars">
-                                        <img src="assets/img/categori/product2.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Geometric striped flower home classy
-                                                decor</a> </h3>
+                                    <div class="filterDiv gym">
+                                        <img src="assets/img/categori/exercise-equip.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Workbench - Olympic Bench</a> </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-4 col-sm-4 ">
                                 <div class="single_product_item">
-                                    <div class="filterDiv colors">
-                                        <img src="assets/img/categori/product1.png" alt="" class="img-fluid">
-                                        <h3> <a href="single-product.html">Geometric striped flower home classy
-                                                decor</a> </h3>
+                                    <div class="filterDiv tennis">
+                                        <img src="assets/img/categori/racket.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Adidas Tennis Racket 2019</a> </h3>
                                         <p>From $5</p>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 ">
+                                <div class="single_product_item">
+                                    <div class="filterDiv football">
+                                        <img src="assets/img/categori/football-gloves.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">SELLS - Football Gloves 2020</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 ">
+                                <div class="single_product_item">
+                                    <div class="filterDiv baseball">
+                                        <img src="assets/img/categori/baseball-bat.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">TTE - Baseball Bat 2020</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 ">
+                                <div class="single_product_item">
+                                    <div class="filterDiv gym">
+                                        <img src="assets/img/categori/run-machine.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Run Machine at Home</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 ">
+                                <div class="single_product_item">
+                                    <div class="filterDiv table_tennis">
+                                        <img src="assets/img/categori/table-tennis.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Nike Table Tennis Racket</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 ">
+                                <div class="single_product_item">
+                                    <div class="filterDiv tennis">
+                                        <img src="assets/img/categori/pngwing.com.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Nike Female Tennis Dress</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 ">
+                                <div class="single_product_item">
+                                    <div class="filterDiv basketball">
+                                        <img src="assets/img/categori/basketball-suit.png" alt="" class="img-fluid">
+                                        <h3> <a href="single-product.html">Indiana Pacers Kit 2020</a> </h3>
+                                        <p>From $5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center container">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
