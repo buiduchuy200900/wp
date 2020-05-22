@@ -114,187 +114,9 @@
     </section>
  
     <!-- product list part end-->
-
-    <!-- client review part here -->
-    <section class="client_review">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="client_review_slider owl-carousel">
-                        <div class="single_client_review">
-                            <div class="client_img">
-                                <img src="assets/img/client.png" alt="#">
-                            </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
-                                help alleviate human suffering.</p>
-                            <h5>- Micky Mouse</h5>
-                        </div>
-                        <div class="single_client_review">
-                            <div class="client_img">
-                                <img src="assets/img/client_1.png" alt="#">
-                            </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
-                                help alleviate human suffering.</p>
-                            <h5>- Micky Mouse</h5>
-                        </div>
-                        <div class="single_client_review">
-                            <div class="client_img">
-                                <img src="assets/img/client_2.png" alt="#">
-                            </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
-                                help alleviate human suffering.</p>
-                            <h5>- Micky Mouse</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- client review part end -->
-
-    <!-- Shop Method Start-->
-    <div class="shop-method-area section-padding30">
-        <div class="container">
-            <div class="row d-flex justify-content-between">
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="single-method mb-40">
-                        <i class="ti-package"></i>
-                        <h6>Free Shipping Method</h6>
-                        <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="single-method mb-40">
-                        <i class="ti-unlock"></i>
-                        <h6>Secure Payment System</h6>
-                        <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="single-method mb-40">
-                        <i class="ti-reload"></i>
-                        <h6>Secure Payment System</h6>
-                        <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Shop Method End-->
-
-    <!-- subscribe part here -->
-    <section class="subscribe_part section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="subscribe_part_content">
-                        <h2>Get promotions & updates!</h2>
-                        <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic”
-                            sources credibly innovate granular internal .</p>
-                        <div class="subscribe_form">
-                            <input type="email" placeholder="Enter your mail">
-                            <a href="#" class="btn_1">Subscribe</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- subscribe part end -->
-
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="single-footer-caption mb-30">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
-                                            tempor incididunt ut labore.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#"> Offers & Discounts</a></li>
-                                    <li><a href="#"> Get Coupon</a></li>
-                                    <li><a href="#"> Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>New Products</h4>
-                                <ul>
-                                    <li><a href="#">Woman Cloth</a></li>
-                                    <li><a href="#">Fashion Accessories</a></li>
-                                    <li><a href="#"> Man Accessories</a></li>
-                                    <li><a href="#"> Rubber made Toys</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Support</h4>
-                                <ul>
-                                    <li><a href="#">Frequently Asked Questions</a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Report a Payment Issue</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer bottom -->
-                <div class="row">
-                    <div class="col-xl-7 col-lg-7 col-md-7">
-                        <div class="footer-copy-right">
-                            <p>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                                template is made with <i class="ti-heart" aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-5 col-md-5">
-                        <div class="footer-copy-right f-right">
-                            <!-- social -->
-                            <div class="footer-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer End-->
-    </footer>
+    <!--footer-->
+    <?php include "footer.php"?>
+    <!--end footer-->
 
     <!-- JS here -->
     <!-- All JS Custom Plugins Link Here here -->
@@ -340,15 +162,15 @@
     <script src="./assets/js/waypoints.min.js"></script>
     <script>
         function showAll(){
-            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            var get_class = document.getElementsByClassName('col-sm-6 col-xl-4');
             for (x of get_class) {
             x.style.display = "block";
             }
         }
         function showFootball(){
-            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            var get_class = document.getElementsByClassName('col-sm-6 col-xl-4');
             for(x of get_class){
-                if(x.className == "col-lg-4 col-sm-4 football"){
+                if(x.className == "col-sm-6 col-xl-4 football"){
                     x.style.display = "block";                      
                 }else{
                     x.style.display = "none";                                    
@@ -356,9 +178,9 @@
             }     
         }
         function showBasketball(){
-            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            var get_class = document.getElementsByClassName('col-sm-6 col-xl-4');
             for(x of get_class){
-                if(x.className == "col-lg-4 col-sm-4 basketball"){
+                if(x.className == "col-sm-6 col-xl-4 basketball"){
                     x.style.display = "block";                      
                 }else{
                     x.style.display = "none";                                    
@@ -366,9 +188,9 @@
             }     
         }
         function showTennis(){
-            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            var get_class = document.getElementsByClassName('col-sm-6 col-xl-4');
             for(x of get_class){
-                if(x.className == "col-lg-4 col-sm-4 tennis"){
+                if(x.className == "col-sm-6 col-xl-4 tennis"){
                     x.style.display = "block";                      
                 }else{
                     x.style.display = "none";                                    
@@ -376,9 +198,9 @@
             }     
         }
         function showBaseball(){
-            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            var get_class = document.getElementsByClassName('col-sm-6 col-xl-4');
             for(x of get_class){
-                if(x.className == "col-lg-4 col-sm-4 baseball"){
+                if(x.className == "col-sm-6 col-xl-4 baseball"){
                     x.style.display = "block";                      
                 }else{
                     x.style.display = "none";                                    
@@ -386,9 +208,9 @@
             }     
         }
         function showGym(){
-            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            var get_class = document.getElementsByClassName('col-sm-6 col-xl-4');
             for(x of get_class){
-                if(x.className == "col-lg-4 col-sm-4 gym"){
+                if(x.className == "col-sm-6 col-xl-4 gym"){
                     x.style.display = "block";                      
                 }else{
                     x.style.display = "none";                                    
@@ -396,9 +218,9 @@
             }     
         }
         function ShowTabletennis(){
-            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            var get_class = document.getElementsByClassName('col-sm-6 col-xl-4');
             for(x of get_class){
-                if(x.className == "col-lg-4 col-sm-4 table_tennis"){
+                if(x.className == "col-sm-6 col-xl-4 table_tennis"){
                     x.style.display = "block";                      
                 }else{
                     x.style.display = "none";                                    
@@ -410,7 +232,7 @@
             input = document.getElementById("myInput");
             filter = input.value.toUpperCase();
             row = document.getElementById("myrow");
-            col = row.getElementsByClassName("col-lg-4 col-sm-4");
+            col = row.getElementsByClassName("col-sm-6 col-xl-4");
             console.log("hello")
             for (i = 0; i < col.length; i++) {
                 a = col[i].getElementsByTagName("input")[0];
