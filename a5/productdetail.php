@@ -1,13 +1,6 @@
 <!doctype html>
 <html lang="zxx">
 
-<style>
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-</style>
 
 <head>
     <meta charset="utf-8">
@@ -31,7 +24,8 @@
         <link rel="stylesheet" href="assets/css/slick.css">
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- PHP here -->
+        <?php include_once ("database.php"); ?>
 </head>
     
 
@@ -175,39 +169,70 @@
     <!-- slider Area End-->
 
   <!--================Single Product Area =================-->
-  <div class="product_image_area">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="single_product_img">
-              <img class="center" src="assets/img/categori/basketball-suit.png" alt="#" class="img-fluid">
-            </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="single_product_text text-center">
-            <h3>Indiana Pacers Kit 2020</h3>
-            <p>
-                ★ We are a professional clothing store. All the jerseys you see are carefully selected by us and made by great manufacturers.【Measuring】★ If you are unsure of size, please tell us your head and chest or height, cm and weight. This can help you choose more suitable clothes, but you should determine the size.★ Our size chart is completely correct. If you have not carefully checked the size chart and cannot wear it after receiving the product, we will not bear the main responsibility. Thank you for your understanding.【Feedback】● Thank you very much for purchasing and identifying our products. Your satisfaction is our greatest pride.● If you have any questions about your order, please contact us through Amazon to inform us and we will solve it for you as soon as possible. I hope you enjoy your shopping! thank you very much!【Service】★ If you need more styles, please change our other products to find your favorite style.★ Don t think that our price is expensive, whether it is shape, material or craftsmanship, we will be more cautious and continuously improve.【Note】● Delivery time: 10-15 working days. The return period is 30 days. Manufacturers sell directly.● Because there is a difference between normal measurement and manual measurement, some errors may occur. Thank you for your understanding.● All the above pictures are displayed, different display effects may be different. Please refer to the actual product.
-           </p>
-                <div class="card_area">
-                <div class="product_count_area">
-                    <p>Quantity</p>
-                    <div class="product_count d-inline-block">
-                        <span class="product_count_item inumber-decrement"> <i class="ti-minus"></i></span>
-                        <input class="product_count_item input-number" type="text" value="1" min="0" max="10">
-                        <span class="product_count_item number-increment"> <i class="ti-plus"></i></span>
+  <?php
+    
+        if(isset($_POST["detail"])){
+            $productid = $_POST["productid"];
+            $sql ="SELECT * FROM Product WHERE id=$productid";
+            $result = mysqli_query($conn, $sql);
+            if (mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                    $img = $row["product_image"];   
+                    $price  = $row["product_price"];
+                    $name = $row["product_name"];
+                    $id = $row["id"];
+                    $detail=$row["product_detail"];
+
+                    echo "<div class='product_image_area'>
+                    <div class='container'>
+                        <div class='row justify-content-center'>
+                            <div class='col-lg-8'>                
+                                <div class='single_product_img'>
+                                <img src= '$img'  alt='#' class='img-fluid'>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='row justify-content-center'>
+                        <div class='col-lg-8 text-center'>
+                          <div class='single_product_text'>
+                            <h3>$name</h3>
+                            <p>
+                                $detail
+                            </p>
+                            <form action='cart.php' method ='post'>
+                                <div class='card_area'>
+                                    <div class='product_count_area'>
+                                        <p>Quantity</p>
+                                        <div class='product_count d-inline-block'>
+                                            <span class='product_count_item inumber-decrement'> <i class='ti-minus'></i></span>
+                                            <input class='product_count_item input-number' type='text' name='Qty' value='1' min='0' max='10'>
+                                            <span class='product_count_item number-increment'> <i class='ti-plus'></i></span>
+                                            <input type='hidden' name='price' value ='$price'>
+                                            <input type ='hidden' name='name' value ='$name'>
+                                            <input type='hidden' name='id' value='$id'>
+                                            <input type='hidden' name ='img' value= '$img'>
+                                        </div
+                                        <p>$price</p>
+                    
+                    
+                                    </div>
+                                <div class='add_to_cart'>
+                                      <input style='padding:20px;margin-left:40px;' type='submit' name='add_to_cart' value='Add To Cart'>
+                                </div>
+                            </form>
+                 
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
                     </div>
-                    <p>$5</p>
-                </div>
-              <div class="add_to_cart">
-                  <a href="#" class="btn_3">add to cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                  </div>";    
+                }
+            };
+        }
+    ?>
+
   <!--================End Single Product Area =================-->
    <!-- subscribe part here -->
    <section class="subscribe_part section_padding">

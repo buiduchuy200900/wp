@@ -45,6 +45,22 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+            .link-button { 
+            background: none;
+            border: none;
+            color: black;
+            text-decoration: none;
+            font-size : 22px;
+            cursor: pointer; 
+            }
+            .link-button:hover{
+            color: #0066ff;
+            }
+        </style>
+    <!-- php here -->
+        <?php include_once ("database.php"); ?>
+        <?php require_once ("product.php"); ?>
 
 </head>
 
@@ -138,12 +154,6 @@
                             <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li class="d-none d-xl-block">
-                                        <div class="form-box f-right ">
-                                            <input type="text" name="Search" placeholder="Search products">
-                                            <div class="search-icon">
-                                                <i class="fas fa-search special-tag"></i>
-                                            </div>
-                                        </div>
                                     </li>
                                     <li class=" d-none d-xl-block">
                                         <div class="favorit-items">
@@ -196,7 +206,7 @@
                     <div class="product_sidebar">
                         <div class="single_sedebar">
                             <form action="#">
-                                <input type="text" name="#" placeholder="Search keyword">
+                                <input  type="text" id="myInput" onkeyup="searchKeyword()"name="#" placeholder="Search ">
                                 <i class="ti-search"></i>
                             </form>
                         </div>
@@ -205,39 +215,14 @@
                                 <div class="select_option_list">Category <i class="right fas fa-caret-down"></i> </div>
                                 <div class="select_option_dropdown">
                                     <div id="myBtnContainer">
-                                        <p><button class="btn active" onclick="filterSelection('all')"><a
-                                                    href="#product_list"> Show
-                                                    all</a></button></p>
-                                        <p><button class="btn" onclick="filterSelection('football')"><a
-                                                    href="#product_list">
-                                                    Football</a></button></p>
-                                        <p><button class="btn" onclick="filterSelection('basketball')"><a
-                                                    href="#product_list">
-                                                    Basketball</a></button></p>
-                                        <p><button class="btn" onclick="filterSelection('tennis')"><a
-                                                    href="#product_list">
-                                                    Tennis</a></button></p>
-                                        <p><button class="btn" onclick="filterSelection('baseball')"><a
-                                                    href="#product_list">
-                                                    Baseball</a></button></p>            
-                                        <p><button class="btn" onclick="filterSelection('gym')"><a
-                                                    href="#product_list">
-                                                    Gym</a></button></p>
-                                        <p><button class="btn" onclick="filterSelection('table_tennis')"><a
-                                                    href="#product_list">
-                                                    Table Tennis</a></button></p>
+                                        <p><button  style ="width:100%" class="btn" onclick="showAll()"> Show All</button></p>                                                
+                                        <p><button style ="width:100%" class="btn" onclick="showFootball()">Football</button></p>
+                                        <p><button style ="width:100%" class="btn" onclick="showBasketball()">Basketball</button></p>                                                                                              
+                                        <p><button style ="width:100%" class="btn" onclick="showTennis()">Tennis</button></p>
+                                        <p><button style ="width:100%" class="btn" onclick="showBaseball()">Baseball</button></p>        
+                                        <p><button style ="width:100%" class="btn" onclick="showGym()">Gym</button></p>
+                                        <p><button style ="width:100%" class="btn" onclick="ShowTabletennis()">Table Tennis</button></p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_sedebar">
-                            <div class="select_option">
-                                <div class="select_option_list">Type <i class="right fas fa-caret-down"></i> </div>
-                                <div class="select_option_dropdown">
-                                    <p><a href="#">Type 1</a></p>
-                                    <p><a href="#">Type 2</a></p>
-                                    <p><a href="#">Type 3</a></p>
-                                    <p><a href="#">Type 4</a></p>
                                 </div>
                             </div>
                         </div>
@@ -245,158 +230,25 @@
                 </div>
                 <div class="col-md-9">
                     <div class="product_list">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="single_product_item">
-                                    <div class="filterDiv football">
-                                        <img src="assets/img/categori/football.png" alt="" class="img-fluid">
-                                        <h3> <a href="WC_Ball.html">Fifa World Cup Russia 2018 Original Ball</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="single_product_item">
-                                    <div class="filterDiv football">
-                                        <img src="assets/img/categori/RM_kit.png" alt="" class="img-fluid">
-                                        <h3> <a href="RM_kit.html">Real Madrid kit 2017/2018</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="single_product_item">
-                                    <div class="filterDiv baseball">
-                                        <img src="assets/img/categori/Daco_612429.png" alt="" class="img-fluid">
-                                        <h3> <a href="Angel_kit.html">Los Angeles Angles kit</a>
-                                        </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="single_product_item">
-                                    <div class="filterDiv basketball">
-                                        <img src="assets/img/categori/basketball.png" alt="" class="img-fluid">
-                                        <h3> <a href="NBA_ball.html">TF - 500 / SPALDING Ball</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="single_product_item">
-                                    <div class="filterDiv gym">
-                                        <img src="assets/img/categori/female_clothing.png" alt="" class="img-fluid">
-                                        <h3> <a href="Gym_female.html">Female Gym Clothes</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="single_product_item">
-                                    <div class="filterDiv gym">
-                                        <img src="assets/img/categori/running_shoes.png" alt="" class="img-fluid">
-                                        <h3> <a href="running_shoes.html">Adidas Running Shoes</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="single_product_item">
-                                    <div class="filterDiv football">
-                                        <img src="assets/img/categori/football_shoes.png" alt="" class="img-fluid">
-                                        <h3> <a href="football_shoes.html">Nike Football Shoes - Adrea Pirlo Version</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="single_product_item">
-                                    <div class="filterDiv baseball">
-                                        <img src="assets/img/categori/baseball-glove.png" alt="" class="img-fluid">
-                                        <h3> <a href="baseball_gloves.html">Puma Baseball Glove 2020</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="single_product_item">
-                                    <div class="filterDiv gym">
-                                        <img src="assets/img/categori/exercise-equip.png" alt="" class="img-fluid">
-                                        <h3> <a href="olympic_bench.html">Workbench - Olympic Bench</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4 ">
-                                <div class="single_product_item">
-                                    <div class="filterDiv tennis">
-                                        <img src="assets/img/categori/racket.png" alt="" class="img-fluid">
-                                        <h3> <a href="tennis_racket.html">Adidas Tennis Racket 2019</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4 ">
-                                <div class="single_product_item">
-                                    <div class="filterDiv football">
-                                        <img src="assets/img/categori/football-gloves.png" alt="" class="img-fluid">
-                                        <h3> <a href="football_gloves.html">SELLS - Football Gloves 2020</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4 ">
-                                <div class="single_product_item">
-                                    <div class="filterDiv baseball">
-                                        <img src="assets/img/categori/baseball-bat.png" alt="" class="img-fluid">
-                                        <h3> <a href="baseball_bat.html">TTE - Baseball Bat 2020</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4 ">
-                                <div class="single_product_item">
-                                    <div class="filterDiv gym">
-                                        <img src="assets/img/categori/run-machine.png" alt="" class="img-fluid">
-                                        <h3> <a href="running_machine.html">Running Machine at Home</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4 ">
-                                <div class="single_product_item">
-                                    <div class="filterDiv table_tennis">
-                                        <img src="assets/img/categori/table-tennis.png" alt="" class="img-fluid">
-                                        <h3> <a href="table_tennis.html">Nike Table Tennis Racket</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4 ">
-                                <div class="single_product_item">
-                                    <div class="filterDiv tennis">
-                                        <img src="assets/img/categori/pngwing.com.png" alt="" class="img-fluid">
-                                        <h3> <a href="tennis_dress.html">Nike Female Tennis Dress</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4 ">
-                                <div class="single_product_item">
-                                    <div class="filterDiv basketball">
-                                        <img src="assets/img/categori/basketball-suit.png" alt="" class="img-fluid">
-                                        <h3> <a href="basketball_kit.html">Indiana Pacers Kit 2020</a> </h3>
-                                        <p>From $5</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="row" id="myrow">
+                            <?php
+                                $sql ="SELECT * FROM Product";
+                                $result = mysqli_query($conn, $sql);
+                                if (mysqli_num_rows($result) > 0){
+                                    while($row = mysqli_fetch_assoc($result)){
+                                        product($row['product_name'], $row['product_price'], $row['product_image'], $row['id'],$row['product_brand']);
+                                    }
+                                    }else {
+                                            echo "0 results";
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+ 
     <!-- product list part end-->
 
     <!-- client review part here -->
@@ -622,49 +474,89 @@
     <script src="./assets/js/mixitup.min.js"></script>
     <script src="./assets/js/jquery.counterup.min.js"></script>
     <script src="./assets/js/waypoints.min.js"></script>
-
     <script>
-        filterSelection("all")
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        function showAll(){
+            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            for (x of get_class) {
+            x.style.display = "block";
             }
         }
-
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-            }
+        function showFootball(){
+            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            for(x of get_class){
+                if(x.className == "col-lg-4 col-sm-4 football"){
+                    x.style.display = "block";                      
+                }else{
+                    x.style.display = "none";                                    
+                }
+            }     
         }
-
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+        function showBasketball(){
+            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            for(x of get_class){
+                if(x.className == "col-lg-4 col-sm-4 basketball"){
+                    x.style.display = "block";                      
+                }else{
+                    x.style.display = "none";                                    
+                }
+            }     
+        }
+        function showTennis(){
+            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            for(x of get_class){
+                if(x.className == "col-lg-4 col-sm-4 tennis"){
+                    x.style.display = "block";                      
+                }else{
+                    x.style.display = "none";                                    
+                }
+            }     
+        }
+        function showBaseball(){
+            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            for(x of get_class){
+                if(x.className == "col-lg-4 col-sm-4 baseball"){
+                    x.style.display = "block";                      
+                }else{
+                    x.style.display = "none";                                    
+                }
+            }     
+        }
+        function showGym(){
+            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            for(x of get_class){
+                if(x.className == "col-lg-4 col-sm-4 gym"){
+                    x.style.display = "block";                      
+                }else{
+                    x.style.display = "none";                                    
+                }
+            }     
+        }
+        function ShowTabletennis(){
+            var get_class = document.getElementsByClassName('col-lg-4 col-sm-4');
+            for(x of get_class){
+                if(x.className == "col-lg-4 col-sm-4 table_tennis"){
+                    x.style.display = "block";                      
+                }else{
+                    x.style.display = "none";                                    
+                }
+            }     
+        }  
+        function searchKeyword() {
+            var input, filter, row, h3, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            row = document.getElementById("myrow");
+            col = row.getElementsByClassName("col-lg-4 col-sm-4");
+            console.log("hello")
+            for (i = 0; i < col.length; i++) {
+                a = col[i].getElementsByTagName("input")[0];
+                txtValue = a.value;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    col[i].style.display = "";
+                } else {
+                    col[i].style.display = "none";
                 }
             }
-            element.className = arr1.join(" ");
-        }
-
-        // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
         }
     </script>
 </body>

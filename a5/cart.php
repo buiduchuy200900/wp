@@ -11,17 +11,67 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
   <!-- CSS here -->
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-      <link rel="stylesheet" href="assets/css/flaticon.css">
-      <link rel="stylesheet" href="assets/css/slicknav.css">
-      <link rel="stylesheet" href="assets/css/animate.min.css">
-      <link rel="stylesheet" href="assets/css/magnific-popup.css">
-      <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-      <link rel="stylesheet" href="assets/css/themify-icons.css">
-      <link rel="stylesheet" href="assets/css/slick.css">
-      <link rel="stylesheet" href="assets/css/nice-select.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="stylesheet" href="assets/css/slicknav.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            #remove{
+                color:blue;
+            }
+        </style>
+       <?php
+        session_start();
+        if(isset($_POST["add_to_cart"])){ 
+          if(isset($_SESSION["cart"])){
+            // $item_array_id = array_column($_SESSION["cart"],"productid");
+            // if (!in_array($_POST["id"],$item_array_id)){
+              $count = count($_SESSION["cart"]);
+              $item_array = array(
+                'productName' => $_POST["name"],
+                'productQty' => $_POST["Qty"],
+                'productPrice' => $_POST["price"],
+                'productid' => $_POST["id"],
+                'productImg' => $_POST["img"]
+            );
+            $_SESSION["cart"][$count]= $item_array;
+            // }
+        //     else{
+        //     echo '<script> alert("Item Already Added") </script>';
+        //     echo '<script> window.location ="index.html" </script>';
+        //   }
+        }
+         else{
+          $item_array = array(
+            'productName' => $_POST["name"],
+            'productQty' => $_POST["Qty"],
+            'productPrice' => $_POST["price"],
+            'productid' => $_POST["id"],
+            'productImg' => $_POST["img"]
+          );
+           $_SESSION["cart"][0]= $item_array;
+            }
+        }
+        
+
+        ///Remove the product
+        if(isset($_POST["remove"])){
+            foreach($_SESSION["cart"] as $key => $value){
+                if ($key == $_POST["delete"]){
+                    unset($_SESSION["cart"][$key]);
+                }
+            } 
+        }
+
+       
+      ?> 
 </head>
 
 <body>
@@ -162,8 +212,9 @@
     </div>
   </div>
   <!-- slider Area End-->
-
+                       
   <!--================Cart Area =================-->
+
   <section class="cart_area section_padding">
     <div class="container">
       <div class="cart_inner">
@@ -178,78 +229,46 @@
               </tr>
             </thead>
             <tbody>
+            <?php if (isset($_POST["add_to_cart"])){
+                $subtotal = 0;
+            }else{
+                    $subtotal = "NaN";
+                }
+        
+            ?>
+                    <?php foreach($_SESSION["cart"] as $key => $value){ ?>
+     <!-- HTML here -->
+                 
               <tr>
+                <form action="cart.php" method="post">
+                <input type="hidden" name="delete" value="<?php echo $key?>">
                 <td>
                   <div class="media">
                     <div class="d-flex">
-                      <img src="assets/img/arrivel/arrivel_1.png" alt="" />
+                      <img src="<?php echo($value['productImg'])?>" alt="" class="img-fulid">
                     </div>
                     <div class="media-body">
-                      <p>Minimalistic shop for multipurpose use</p>
+                        <p><?php echo($value["productName"]);?><p>
                     </div>
                   </div>
                 </td>
                 <td>
-                  <h5>$360.00</h5>
+                  <h5><?php echo"$".($value["productPrice"]) ?></h5>
+                </td>   
+                <td>
+                   <h5 style="font-size:20px"><?php echo($value["productQty"])?></h5>
                 </td>
                 <td>
-                  <div class="product_count">
-                    <!-- <input type="text" value="1" min="0" max="10" title="Quantity:"
-                      class="input-text qty input-number" />
-                    <button
-                      class="increase input-number-increment items-count" type="button">
-                      <i class="ti-angle-up"></i>
-                    </button>
-                    <button
-                      class="reduced input-number-decrement items-count" type="button">
-                      <i class="ti-angle-down"></i>
-                    </button> -->
-                    <span class="input-number-decrement"> <i class="ti-minus"></i></span>
-                    <input class="input-number" type="text" value="1" min="0" max="10">
-                    <span class="input-number-increment"> <i class="ti-plus"></i></span>
-                  </div>
+                  <h5 ><?php echo"$".($value["productPrice"]*$value["productQty"]) ?></h5>
                 </td>
                 <td>
-                  <h5>$720.00</h5>
+                    <input type="submit" id="remove" name="remove" value="Remove">
                 </td>
+                </form>
+    
               </tr>
-              <tr>
-                <td>
-                  <div class="media">
-                    <div class="d-flex">
-                      <img src="assets/img/arrivel/arrivel_2.png" alt="" />
-                    </div>
-                    <div class="media-body">
-                      <p>Minimalistic shop for multipurpose use</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <h5>$360.00</h5>
-                </td>
-                <td>
-                  <div class="product_count">
-                      <span class="input-number-decrement"> <i class="ti-minus"></i></span>
-                      <input class="input-number" type="text" value="1" min="0" max="10">
-                      <span class="input-number-increment"> <i class="ti-plus"></i></span>
-                  </div>
-                </td>
-                <td>
-                  <h5>$720.00</h5>
-                </td>
-              </tr>
-              <tr class="bottom_button">
-                <td>
-                  <a class="btn_1" href="#">Update Cart</a>
-                </td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="cupon_text float-right">
-                    <a class="btn_1" href="#">Close Coupon</a>
-                  </div>
-                </td>
-              </tr>
+              <?php $subtotal= ($subtotal + ($value["productPrice"]*$value["productQty"]))?>
+              <?php } ?> 
               <tr>
                 <td></td>
                 <td></td>
@@ -257,9 +276,12 @@
                   <h5>Subtotal</h5>
                 </td>
                 <td>
-                  <h5>$2160.00</h5>
+                    <?php $subtotal = "$". $subtotal ?>
+                  <h5><?php echo $subtotal; ?></h5>
                 </td>
               </tr>
+
+         
               <tr class="shipping_area">
                 <td></td>
                 <td></td>
@@ -267,48 +289,23 @@
                   <h5>Shipping</h5>
                 </td>
                 <td>
-                  <div class="shipping_box">
-                    <ul class="list">
-                      <li>
-                        Flat Rate: $5.00
-                        <input type="radio" aria-label="Radio button for following text input">
-                      </li>
-                      <li>
-                        Free Shipping
-                        <input type="radio" aria-label="Radio button for following text input">
-                      </li>
-                      <li>
-                        Flat Rate: $10.00
-                        <input type="radio" aria-label="Radio button for following text input">
-                      </li>
-                      <li class="active">
-                        Local Delivery: $2.00
-                        <input type="radio" aria-label="Radio button for following text input">
-                      </li>
-                    </ul>
-                    <h6>
-                      Calculate Shipping
-                      <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </h6>
-                    <select class="shipping_select">
-                      <option value="1">Bangladesh</option>
-                      <option value="2">India</option>
-                      <option value="4">Pakistan</option>
-                    </select>
-                    <select class="shipping_select section_bg">
-                      <option value="1">Select a State</option>
-                      <option value="2">Select a State</option>
-                      <option value="4">Select a State</option>
-                    </select>
-                    <input class="post_code" type="text" placeholder="Postcode/Zipcode" />
-                    <a class="btn_1" href="#">Update Details</a>
-                  </div>
+                    <h5>Free Ship</h5>
+                </td>
+              </tr>
+              <tr class="shipping_area">
+                <td></td>
+                <td></td>
+                <td>
+                  <h5>Total</h5>
+                </td>
+                <td>
+                    <h5><?php echo $subtotal ?></h5>
                 </td>
               </tr>
             </tbody>
           </table>
           <div class="checkout_btn_inner float-right">
-            <a class="btn_1" href="#">Continue Shopping</a>
+            <a class="btn_1" href="product_list.php">Continue Shopping</a>
             <a class="btn_1 checkout_btn_1" href="#">Proceed to checkout</a>
           </div>
         </div>
