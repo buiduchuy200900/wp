@@ -59,7 +59,7 @@
             }
         </style>
     <!-- php here -->
-        <?php include_once ("database.php"); ?>
+        <?php include_once ("Createdb.php"); ?> 
         <?php require_once ("product.php"); ?>
 
 </head>
@@ -239,7 +239,7 @@
                                         product($row['product_name'], $row['product_price'], $row['product_image'], $row['id'],$row['product_brand']);
                                     }
                                     }else {
-                                            echo "0 results";
+                                        echo "0 results";
                                 }
                             ?>
                         </div>
