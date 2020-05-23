@@ -33,7 +33,7 @@ if (isset($_POST['Submit'])) {
 $Username = isset($_POST['Username']) ? $_POST['Username'] : '';
 $Password = isset($_POST['Password']) ? $_POST['Password'] : '';
     if (isset($login[$Username]) &&  $login[$Username] == $Password) {
-        $_SESSION['Userdata']['Username'] = $Username;
+        // $_SESSION['Userdata']['Username'] = $Username;
         header("location: admin.php");
         exit;
     }

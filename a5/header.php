@@ -23,7 +23,7 @@
                                             </li>
                                             <li><a href="cart.php">Cart</a>
                                             </li>
-                                            <li><a href="checkout.html">Check out</a></li>
+                                            <li><a href="checkout.php">Check out</a></li>
                                         </ul>
                                     </nav>
                                 </div>

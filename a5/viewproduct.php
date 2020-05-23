@@ -11,38 +11,38 @@
 <body>
     <div class="container">
         <div class="row" style="margin-top:100px">
-            <div class="col-12 ">
+            <div class="col">
+                <div style="text-align:center">hello</div>
                 <table class="table">
                     <thead>
                         <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th>#</th>
+                        <th >First</th>
+                        <th >Last</th>
+                        <th >Handle</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        <th scope="row">1</th>
+                        <th>1</th>
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
                         </tr>
                         <tr>
-                        <th scope="row">2</th>
+                        <th>2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
                         <td>@fat</td>
                         </tr>
                         <tr>
-                        <th scope="row">3</th>
+                        <th>3</th>
                         <td>Larry</td>
                         <td>the Bird</td>
                         <td>@twitter</td>
                         </tr>
                     </tbody>
                 </table>
-
             </div>
         </div>
     </div> 

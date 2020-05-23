@@ -33,22 +33,16 @@
         session_start();
         if(isset($_POST["add_to_cart"])){ 
           if(isset($_SESSION["cart"])){
-            // $item_array_id = array_column($_SESSION["cart"],"productid");
-            // if (!in_array($_POST["id"],$item_array_id)){
               $count = count($_SESSION["cart"]);
               $item_array = array(
                 'productName' => $_POST["name"],
                 'productQty' => $_POST["Qty"],
                 'productPrice' => $_POST["price"],
                 'productid' => $_POST["id"],
-                'productImg' => $_POST["img"]
+                'productImg' => $_POST["img"],
+                'subtotal' => $_POST["Qty"]*$_POST["price"]
             );
             $_SESSION["cart"][$count]= $item_array;
-            // }
-        //     else{
-        //     echo '<script> alert("Item Already Added") </script>';
-        //     echo '<script> window.location ="index.html" </script>';
-        //   }
         }
          else{
           $item_array = array(
@@ -56,7 +50,8 @@
             'productQty' => $_POST["Qty"],
             'productPrice' => $_POST["price"],
             'productid' => $_POST["id"],
-            'productImg' => $_POST["img"]
+            'productImg' => $_POST["img"],
+            'subtotal' => $_POST["Qty"]*$_POST["price"] 
           );
            $_SESSION["cart"][0]= $item_array;
             }
@@ -192,9 +187,12 @@
               </tr>
             </tbody>
           </table>
+          <!-- Put the total to the session  -->
+          <?php $_SESSION['total']=$subtotal?>
+          <!-- -->
           <div class="checkout_btn_inner float-right">
             <a class="btn_1" href="product_list.php">Continue Shopping</a>
-            <a class="btn_1 checkout_btn_1" href="#">Proceed to checkout</a>
+            <a class="btn_1 checkout_btn_1" href="checkout.php">Proceed to checkout</a>
           </div>
         </div>
       </div>
