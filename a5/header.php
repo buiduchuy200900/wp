@@ -28,6 +28,11 @@
                                     </nav>
                                 </div>
                             </div> 
+                            <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                                <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
+                                    <li class="d-none d-lg-block"> <a href="admin/login.php" class="btn header-btn">Admin Login</a></li>;
+                                </ul>
+                            </div>
                             <!-- Mobile Menu -->
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>

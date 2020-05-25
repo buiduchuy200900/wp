@@ -71,7 +71,7 @@
                                     <p data-animation="fadeInRight" data-delay=".8s">Best Cloth Collection By 2020!</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
-                                        <a href="industries.html" class="btn hero-btn">Shop Now</a>
+                                        <a href="product_list.php" class="btn hero-btn">Shop Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +214,7 @@
                             <div class="best-product-caption">
                                 <h2>Find The Best Product<br> from Our Shop</h2>
                                 <p>Designers who are interesten creating state ofthe.</p>
-                                <a href="#" class="black-btn">Shop Now</a>
+                                <a href="product_lis.php" class="black-btn">Shop Now</a>
                             </div>
                         </div>
                     </div>
