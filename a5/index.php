@@ -111,7 +111,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="best-left-cap">
                             <h2>Best Collection of This Month</h2>
-                            <p>Designers who are interesten crea.</p>
+                            <p>Designers who are interested in creating new things.</p>
                             <a href="product_list.php" class="btn shop1-btn">Shop Now</a>
                         </div>
                         <div class="best-left-img mb-30 d-none d-sm-block">
