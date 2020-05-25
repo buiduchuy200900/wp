@@ -36,21 +36,21 @@
                         <div class="single-method mb-40">
                             <i class="ti-package"></i>
                             <h6>Free Shipping Method</h6>
-                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                            <p>We provide a free ship voucher for dominant customer</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="single-method mb-40">
                             <i class="ti-unlock"></i>
                             <h6>Secure Payment System</h6>
-                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                            <p>We promise to refund customer 100% of money if they don't sastified with a product</p>
                         </div>
                     </div> 
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="single-method mb-40">
                             <i class="ti-reload"></i>
-                            <h6>Secure Payment System</h6>
-                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                            <h6>Secure Product</h6>
+                            <p>Customer would recieve a replace item if the older one is broken</p>
                         </div>
                     </div>
                 </div>
