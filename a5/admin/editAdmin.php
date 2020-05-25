@@ -47,8 +47,8 @@
 						<input type="text"name="adminAddress" value="<?php echo $address?>"class="form-control" placeholder="Address">
 					</div>
                     <div class="form-group">
-                        <label>Mobiel Phone</label>                  
-						<input type="text"name="adminPhone" value="<?php echo $mobile ?>"class="form-control" placeholder="Mobile Phone" required>
+                        <label>Mobile Phone</label>                  
+						<input type="number"name="adminPhone" value="<?php echo $mobile ?>"class="form-control" placeholder="Mobile Phone" required>
 					</div>
 					<div class="form-group">
 						<button type="submit" name="updateAdmin" value="success" class="btn btn-primary btn-block">Update</button>

@@ -1,6 +1,7 @@
 <?php
 include 'connectdb.php';
 // head back to login if you not login
+session_start();
 if (!isset($_SESSION["login"])){
     header("Location: login.php");
 }

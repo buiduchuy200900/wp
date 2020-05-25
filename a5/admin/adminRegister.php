@@ -28,7 +28,7 @@
 					</div>
 					<div class="form-group">
                         <label>Email</label>                  
-						<input type="text"name="adminEmail" class="form-control" placeholder="Email">
+						<input type="email"name="adminEmail" class="form-control" placeholder="Email">
 					</div>
                     <div class="form-group">
                         <label>Address</label>                  
@@ -36,7 +36,7 @@
 					</div>
                     <div class="form-group">
                         <label>Mobile Phone</label>                  
-						<input type="text"name="adminPhone" class="form-control" placeholder="Mobile Phone">
+						<input type="number" name="adminPhone" class="form-control" placeholder="Mobile Phone">
                     </div> 
 					<div class="form-group">
 						<button type="submit" name="register" value="success" class="btn btn-primary btn-block">Register</button>

@@ -115,19 +115,19 @@
             <h3>Customer Information</h3>
             <form class="row contact_form" action="checkout.php" method="post" novalidate="novalidate">
               <div class="col-md-12 form-group">
-                <input type="text" class="form-control" id="name" name="name" />
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
                 <div class="error">* <?php echo $nameErr;?></div>
               </div>
               <div class="col-md-12 form-group">
-                <input type="text" class="form-control" id="email" name="email" />
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email"/>
                 <div class="error">* <?php echo $emailErr;?></div>
               </div>
               <div class="col-md-12 form-group">
-                <input type="text" class="form-control" id="mobilephone" name="phone" />
+                <input type="text" class="form-control" id="mobilephone" name="phone"placeholder="Mobile Phone" />
                 <div class="error">* <?php echo $mobileErr;?></div>
               </div>
               <div class="col-md-12 form-group">
-                <input type="text" class="form-control" id="address" name="address" />
+                <input type="text" class="form-control" id="address" name="address" placeholder="Address"/>
                 <div class="error">* <?php echo $addressErr;?></div>
               </div>
             <!-- Shipping detail -->
