@@ -67,8 +67,8 @@
                     $id = $row["id"];
                     $detail=$row["product_detail"];
 
-                    echo "<div class='product_image_area'>
-                    <div class='container'>
+                    echo "
+                    <div class='container' marign-top:100px>
                         <div class='row justify-content-center'>
                             <div class='col-lg-8'>                
                                 <div class='single_product_img'>
@@ -111,7 +111,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>";    
+                  ";    
                 }
             };
         }
