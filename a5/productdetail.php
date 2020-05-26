@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>eCommerce HTML-5 Template </title>
+    <title>Assignment 5</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -96,7 +96,7 @@
                                             <input type='hidden' name='id' value='$id'>
                                             <input type='hidden' name ='img' value= '$img'>
                                         </div
-                                        <p>$price</p>
+                                        <p>$ $price</p>
                     
                     
                                     </div>

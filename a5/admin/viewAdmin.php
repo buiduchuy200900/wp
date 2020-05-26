@@ -32,7 +32,7 @@
                                         <th >Password</th>
                                         <th >Email</th>
                                         <th >Address</th>
-                                        <th> Mobile Phone</th>
+                                        <th> Phone</th>
                                         <th> Edit</th>
                                         <th> Delete </th>
                                         </tr>

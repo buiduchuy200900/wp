@@ -13,7 +13,7 @@
                         </div>
                          <div class="col-xl-5 col-lg-5 col-md-6 ">
                             <div class="latest-subscribe">
-                                <form action="#">
+                                <form action="product_list.php">
                                     <input type="email" placeholder="Your email here">
                                     <button>Shop Now</button>
                                 </form>
