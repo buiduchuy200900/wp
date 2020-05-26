@@ -69,7 +69,7 @@ $conn = new mysqli("$servername:$port", $username, $password, $dbName);
 // sql to create table admin
 // $sql = "CREATE TABLE Admins (
 //     id INT (11) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-//     adminName VARCHAR(200) NOT NULL,
+//     adminName VARCHAR(200) UNIQUE NOT NULL,
 //     adminPassword VARCHAR(200) NOT NULL,
 //     email VARCHAR(200),
 //     Adresss VARCHAR (500),
